@@ -65,7 +65,7 @@ gulp.task('server', function () {
 
 //Sass
 gulp.task('sass', function () {
-  return gulp.src('app/scss/**/*.scss')
+  return gulp.src('app/scss/*.scss')
     .pipe(sass({outputStyle:'​compressed'}))
     .pipe(gulp.dest('app/css'));
 });
