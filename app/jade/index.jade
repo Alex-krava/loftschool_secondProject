@@ -12,6 +12,13 @@ head
     link(rel="stylesheet" href="css/main.css")
     // endbuild
 body
+    .wrapper
+        include includes/header.jade
+        include includes/nav.jade      
+        .conteiner
+            include includes/sidebar.jade
+            include includes/content-index.jade            
+        include includes/footer.jade
     // build:js js/vendor.min.js
     // bower:js
     //endbower

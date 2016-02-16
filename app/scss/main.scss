@@ -1,0 +1,20 @@
+html,
+body{
+  height: 100%;
+}
+.wrapper {
+  display: table;
+  height: 100%;
+}
+.header {
+   height: 80px;
+    background-color: blue;
+}
+.conteiner {
+  display: table-row;
+  height: 100%;
+}
+.footer {
+   height: 80px;
+    background-color: blue;
+}

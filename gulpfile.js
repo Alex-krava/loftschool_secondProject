@@ -13,7 +13,7 @@
 
 
 //wiredep bower
-gulp.task('wiredep', function () {
+gulp.task('wiredep',['sass', 'jade'], function () {
     gulp.src('app/*.html')
        .pipe(wiredep())
        .pipe(gulp.dest('app/'));
@@ -72,7 +72,7 @@ gulp.task('sass', function () {
 
 //Watch
 gulp.task('watch', function () {
-    gulp.watch('app/jade/*.jade', ['jade']);
+    gulp.watch('app/jade/**/*.jade', ['jade', 'wiredep']);
     gulp.watch('app/scss/**/*.scss', ['sass']);
     gulp.watch([
     'app/*.html',
@@ -92,7 +92,7 @@ gulp.task('jade', function () {
           locals: YOUR_LOCALS,
           pretty: true
       }))
-      .pipe(gulp.dest('app'))
+      .pipe(gulp.dest('app/'))
 });
 
 //Generates Sprite
@@ -107,6 +107,6 @@ gulp.task('sprite', function () {
 });
 
 //Default
-gulp.task('default', ['sass', 'jade', 'wiredep', 'server', 'watch']);
+gulp.task('default', ['wiredep', 'server', 'watch']);
 
 
