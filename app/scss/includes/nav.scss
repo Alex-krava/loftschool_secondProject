@@ -17,11 +17,12 @@
 }
 .menu_link{
     text-decoration: none;
-    padding: 18px 17px;
+    padding: 15px 17px;
     display: block;
     color: $color-text-header-aside;
     @include text-OpenSans(normal, normal, 16px);
     @include transition(.2s, all);
+    box-sizing: border-box;
     
     &:not(.menu_link-active):hover{
         background-color: $color-header-nav-back-hover;

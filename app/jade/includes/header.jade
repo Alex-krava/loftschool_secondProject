@@ -3,6 +3,13 @@ include ../mixins/mixins
     .header_first
         .header_first_container
             +social(['fb', 'vk', 'twitter'], 'social-head')
+            .head-contacts
+                .head-contacts_loc
+                    .head-contacts_loc_icon
+                    .head-contacts_loc_content ул.Маяковская 6, офис 17
+                .head-contacts_tel
+                    .head-contacts_tel_icon
+                    .head-contacts_tel_content +7 (921) 123-12-13
     .header_second
         .header_second_container
             a(href="/").logo
@@ -10,7 +17,7 @@ include ../mixins/mixins
             form.search
                 input(type="text" placeholder="Что будем искать").search_field
                 input(type="button" value="Найти").search_button
-            +list(['Карта проезда', 'История заказов', 'Корзина'], 'header-nav')     
+            +list(['Карта проезда', 'История заказов', 'Корзина'], 'header-nav')
             
             
         

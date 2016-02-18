@@ -13,5 +13,5 @@ mixin social(items, className)
     div(class="#{className}")
         ul(class="#{className}_list")
             each item in items
-                    li(class="#{className}_item_#{item}")
+                    li(class="#{className}_item #{className}_item_#{item}")
                         a(href="#" class="#{className}_link_#{item}")
