@@ -1,0 +1,17 @@
+mixin list(items, className, active)
+    div(class="#{className}")
+        ul(class="#{className}_list")
+            each item, key in items
+                if key == active
+                    li(class="#{className}_item")
+                        a(href="#" class="#{className}_link #{className}_link-active")= item
+                else
+                    li(class="#{className}_item")
+                        a(href="#" class="#{className}_link")= item
+
+mixin social(items, className)
+    div(class="#{className}")
+        ul(class="#{className}_list")
+            each item in items
+                    li(class="#{className}_item_#{item}")
+                        a(href="#" class="#{className}_link_#{item}")

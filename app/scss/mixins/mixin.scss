@@ -1,3 +1,42 @@
+%clearfix{
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin text-OpenSans($font-weight, $font-style, $size){
+    font-family: 'Open Sans';
+    font-weight: $font-weight;
+	font-style: $font-style;
+    font-size: $size;
+}
+
 @mixin margin-Auto(){
     margin: 0 auto;
+}
+
+@mixin borderRadius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -o-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin box-sizing-border-box() {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin transition($value1, $value2) {
+    -moz-transition: $value1 $value2;
+    -o-transition: $value1 $value2;
+    -webkit-transition: $value1 $value2;
+    transition: $value1 $value2;
 }

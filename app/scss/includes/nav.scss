@@ -2,3 +2,32 @@
     min-height: 52px;
     border-bottom: 2px solid $color-border-header;
 }
+.menu{
+    width: 1100px;
+    @include margin-Auto();
+}
+.menu_list{
+    list-style: none;
+    @extend %clearfix;
+    margin: 0;
+    padding: 0;
+}
+.menu_item{
+    float: left;
+}
+.menu_link{
+    text-decoration: none;
+    padding: 18px 17px;
+    display: block;
+    color: $color-text-header-aside;
+    @include text-OpenSans(normal, normal, 16px);
+    @include transition(.2s, all);
+    
+    &:not(.menu_link-active):hover{
+        background-color: $color-header-nav-back-hover;
+    }
+}
+.menu_link-active{
+    background-color: $color-active-back;
+    color: $color-text-nav-menu-active;
+}
