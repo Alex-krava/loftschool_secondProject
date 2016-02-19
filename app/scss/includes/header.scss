@@ -54,13 +54,15 @@
 .head-contacts{
     float: right;
     @extend %clearfix;
-    color: $color-text-header-aside;
     margin-top: -23px;
 }
 .head-contacts_loc{
     width: 192px;
     @extend %clearfix;
     float: left;
+    display: block;
+    text-decoration: none;
+    color: $color-text-header-aside;
 }
 .head-contacts_loc_icon{
     @include sprite($map-pin);
@@ -80,6 +82,9 @@
     float: left;
     width: 182px;
     margin-left: 85px;
+    display: block;
+    text-decoration: none;
+    color: $color-text-header-aside;
 }
 .head-contacts_tel_content{
     @include text-OpenSans(600, normal, 18px);

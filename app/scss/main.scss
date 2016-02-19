@@ -13,8 +13,17 @@ body{
 }
 @import "includes/header";
 @import "includes/nav";
-.conteiner {
+.content {
   display: table-row;
   height: 100%;
 }
+.content_container{
+    width: 1100px;
+    @extend %clearfix;
+    @include margin-Auto();
+    margin-bottom: 25px;
+}
+@import "includes/pagetitle";
+@import "includes/content-index";
+@import "includes/sidebar";
 @import "includes/footer";

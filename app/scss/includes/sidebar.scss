@@ -1,0 +1,9 @@
+.sidebar{
+    width: 331px;
+    height: 400px;
+    float: left;
+    margin-top: 155px;
+    margin-right: 22px;
+    border: 1px solid $color-border-search;
+    @include borderRadius(5px);
+}

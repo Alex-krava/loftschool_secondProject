@@ -40,3 +40,9 @@
     -webkit-transition: $value1 $value2;
     transition: $value1 $value2;
 }
+@mixin appearance(){
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}

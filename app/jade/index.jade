@@ -4,6 +4,7 @@ head
     meta(charset="UTF-8")
     title Document
     // build:css css/vendor.min.css
+    link(rel="stylesheet" href="bower/select2/dist/css/select2.css")
     // bower:css
     // endbower
     // endbuild
@@ -15,9 +16,11 @@ body
     .wrapper
         include includes/header.jade
         include includes/nav.jade      
-        .conteiner
-            include includes/sidebar.jade
-            include includes/content-index.jade                 
+        .content
+            .content_container
+                include includes/pagetitle.jade
+                include includes/sidebar.jade
+                include includes/content-index.jade                 
         include includes/footer.jade
     // build:js js/vendor.min.js
     // bower:js

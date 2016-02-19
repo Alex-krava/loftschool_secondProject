@@ -1,0 +1,89 @@
+.content-index{
+    width: 745px;
+    float: right;
+    margin-top: 25px;
+    @extend %clearfix;
+}
+.content-index_header{
+    min-height: 51px;
+    background-color: $color-back-content-index;
+    border: 1px solid $color-border-search;
+    @include borderRadius(5px);
+    @extend %clearfix;
+}
+.select2-selection--single{
+    width: 140px;
+    height: 29px;
+    border: none !important; 
+    float: left;
+    box-shadow: 0 2px 0 -1px #dddddd inset, 0 3px 0 -1px #f3f3f3 inset;
+    display: block;
+    margin-top: 10px;
+    color: #7f7f7f;
+    padding-left: 5px;
+    border-style: none;
+    @include box-sizing-border-box();
+    @include text-OpenSans(300, normal, 14px);
+    
+    &:focus{
+        outline: none;
+    }
+    
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+    @include sprite($select);
+    border-style: none;
+    margin: 7px 0 0 -20px;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    @include sprite($select-close);
+}
+.select2-container--open .select2-dropdown--below{
+    width: 140px !important;
+    margin-top: 3px;
+    border: none;
+    box-shadow: 0 0 5px #868686;
+    color: #7f7f7f;
+    @include text-OpenSans(300, normal, 14px);
+    padding-left: 6px;
+}
+.select2-container--default .select2-results__option[aria-selected=true] {
+     background-color: #fff;
+     color: #7f7f7f;
+}
+.select2-results__option--highlighted[aria-selected] {
+    background-color: #fff !important;
+    color: #333333 !important;
+    @include text-OpenSans(600, normal, 14px);
+    @include transition(color, .4s); 
+}
+.select2-results__option {
+    padding: 5px 6px 5px 6px;
+}
+.content-index_header_select::-ms-expand {
+  display: none;
+}
+.select-icon{
+    @include sprite($select);
+    margin: 22px 0 0 257px;
+    position: absolute;
+}
+.select-text{
+    float: left;
+    @include text-OpenSans(normal, normal, 14px);
+    color: $color-text-content;
+    margin: 15px 7px 0 18px;
+}
+.catalogs-buttons-text{
+    @include text-OpenSans(normal, normal, 14px);
+    color: $color-text-content;
+    margin: 15px 7px 0 18px;
+}
+.catalogs-buttons_first{
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        @include sprite($view-first);
+    }
+}

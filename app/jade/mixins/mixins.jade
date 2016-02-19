@@ -15,3 +15,11 @@ mixin social(items, className)
             each item in items
                     li(class="#{className}_item #{className}_item_#{item}")
                         a(href="#" class="#{className}_link_#{item}")
+
+mixin select(items, className, active)
+    select(class="#{className}")
+        each item, key in items
+            if key == active
+                option(class="#{className}" autofocus)= item
+            else
+                option(class="#{className}")= item

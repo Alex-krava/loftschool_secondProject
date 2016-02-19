@@ -1,0 +1,26 @@
+.breadcrumbs_list{
+    margin: 30px 0 0 0;
+    list-style: none;
+    padding: 0;
+    @extend %clearfix;
+    color: $color-text-header-aside;
+    font-size: 16px;
+    @include text-OpenSans(normal, normal, 14px);
+}
+.breadcrumbs_item{
+    float: left;
+}
+.breadcrumbs_link{
+    text-decoration: none;
+    margin-right: 3px;
+
+}
+.breadcrumbs_link-active{
+    color: $color-text-header-aside-active;
+    text-decoration: underline;
+}
+.page-title{
+    @include text-OpenSans(bold, normal, 20px);
+    color: $color-text-header-aside;
+    margin-top: 20px;
+}
