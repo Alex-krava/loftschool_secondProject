@@ -136,11 +136,11 @@ The `sprites` mixin generates identical output to the CSS template
   font-weight: 800;
   font-style: normal; }
 
-.social-head:before, .social-head_list:before, .head-contacts:before, .head-contacts_loc:before, .head-contacts_tel:before, .header_second_container:before, .header-nav:before, .header-nav_list:before, .menu_list:before, .content_container:before, .breadcrumbs_list:before, .content-index:before, .content-index_header:before, .catalogs-buttons:before, .content-index_content:before, .content-index_content-item:before, .content-index_content-list--second .content-index_content-item_photo-code:before, .content-index_content-list--second .charactiristic_item:before, .content-index_content-list--second .content-index_content-item_title_rating:before, .sidebar_accordion:before, .social-head:after, .social-head_list:after, .head-contacts:after, .head-contacts_loc:after, .head-contacts_tel:after, .header_second_container:after, .header-nav:after, .header-nav_list:after, .menu_list:after, .content_container:after, .breadcrumbs_list:after, .content-index:after, .content-index_header:after, .catalogs-buttons:after, .content-index_content:after, .content-index_content-item:after, .content-index_content-list--second .content-index_content-item_photo-code:after, .content-index_content-list--second .charactiristic_item:after, .content-index_content-list--second .content-index_content-item_title_rating:after, .sidebar_accordion:after {
+.social-head:before, .social-head_list:before, .head-contacts:before, .head-contacts_loc:before, .head-contacts_tel:before, .header_second_container:before, .header-nav:before, .header-nav_list:before, .menu_list:before, .content_container:before, .breadcrumbs_list:before, .content-index:before, .content-index_header:before, .catalogs-buttons:before, .content-index_content:before, .content-index_content-item:before, .content-index_content-list--second .content-index_content-item_photo-code:before, .content-index_content-list--second .charactiristic_item:before, .content-index_content-list--second .content-index_content-item_title_rating:before, .sidebar_accordion:before, .sidebar_accordion_availability:before, .social-head:after, .social-head_list:after, .head-contacts:after, .head-contacts_loc:after, .head-contacts_tel:after, .header_second_container:after, .header-nav:after, .header-nav_list:after, .menu_list:after, .content_container:after, .breadcrumbs_list:after, .content-index:after, .content-index_header:after, .catalogs-buttons:after, .content-index_content:after, .content-index_content-item:after, .content-index_content-list--second .content-index_content-item_photo-code:after, .content-index_content-list--second .charactiristic_item:after, .content-index_content-list--second .content-index_content-item_title_rating:after, .sidebar_accordion:after, .sidebar_accordion_availability:after {
   content: "";
   display: table; }
 
-.social-head:after, .social-head_list:after, .head-contacts:after, .head-contacts_loc:after, .head-contacts_tel:after, .header_second_container:after, .header-nav:after, .header-nav_list:after, .menu_list:after, .content_container:after, .breadcrumbs_list:after, .content-index:after, .content-index_header:after, .catalogs-buttons:after, .content-index_content:after, .content-index_content-item:after, .content-index_content-list--second .content-index_content-item_photo-code:after, .content-index_content-list--second .charactiristic_item:after, .content-index_content-list--second .content-index_content-item_title_rating:after, .sidebar_accordion:after {
+.social-head:after, .social-head_list:after, .head-contacts:after, .head-contacts_loc:after, .head-contacts_tel:after, .header_second_container:after, .header-nav:after, .header-nav_list:after, .menu_list:after, .content_container:after, .breadcrumbs_list:after, .content-index:after, .content-index_header:after, .catalogs-buttons:after, .content-index_content:after, .content-index_content-item:after, .content-index_content-list--second .content-index_content-item_photo-code:after, .content-index_content-list--second .charactiristic_item:after, .content-index_content-list--second .content-index_content-item_title_rating:after, .sidebar_accordion:after, .sidebar_accordion_availability:after {
   clear: both; }
 
 html,
@@ -182,12 +182,12 @@ body {
 .social-head_link_fb {
   display: block;
   background-image: url(../img/icon/sprite.png);
-  background-position: -174px 0px;
+  background-position: -125px -116px;
   width: 26px;
   height: 26px; }
   .social-head_link_fb:hover {
     background-image: url(../img/icon/sprite.png);
-    background-position: -125px -116px;
+    background-position: -84px -116px;
     width: 26px;
     height: 26px; }
 
@@ -206,12 +206,12 @@ body {
 .social-head_link_twitter {
   display: block;
   background-image: url(../img/icon/sprite.png);
-  background-position: -84px -116px;
+  background-position: -174px -41px;
   width: 26px;
   height: 26px; }
   .social-head_link_twitter:hover {
     background-image: url(../img/icon/sprite.png);
-    background-position: -174px -41px;
+    background-position: -174px 0px;
     width: 26px;
     height: 26px; }
 
@@ -474,7 +474,7 @@ body {
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
   background-image: url(../img/icon/sprite.png);
-  background-position: -121px -157px;
+  background-position: -66px -188px;
   width: 13px;
   height: 9px;
   border-style: none;
@@ -482,7 +482,7 @@ body {
 
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
   background-image: url(../img/icon/sprite.png);
-  background-position: -93px -157px;
+  background-position: -186px -157px;
   width: 13px;
   height: 9px; }
 
@@ -522,7 +522,7 @@ body {
 
 .select-icon {
   background-image: url(../img/icon/sprite.png);
-  background-position: -121px -157px;
+  background-position: -66px -188px;
   width: 13px;
   height: 9px;
   margin: 22px 0 0 257px;
@@ -571,19 +571,37 @@ body {
 
 .catalogs-buttons_first:before {
   background-image: url(../img/icon/sprite.png);
-  background-position: -174px -117px;
+  background-position: -93px -157px;
+  width: 16px;
+  height: 16px; }
+
+.catalogs-buttons_first--active:before {
+  background-image: url(../img/icon/sprite.png);
+  background-position: 0px -157px;
   width: 16px;
   height: 16px; }
 
 .catalogs-buttons_second:before {
   background-image: url(../img/icon/sprite.png);
-  background-position: 0px -157px;
+  background-position: -62px -157px;
+  width: 16px;
+  height: 16px; }
+
+.catalogs-buttons_second--active:before {
+  background-image: url(../img/icon/sprite.png);
+  background-position: -124px -157px;
   width: 16px;
   height: 16px; }
 
 .catalogs-buttons_third:before {
   background-image: url(../img/icon/sprite.png);
   background-position: -31px -157px;
+  width: 16px;
+  height: 16px; }
+
+.catalogs-buttons_third--active:before {
+  background-image: url(../img/icon/sprite.png);
+  background-position: -174px -117px;
   width: 16px;
   height: 16px; }
 
@@ -793,7 +811,7 @@ body {
   cursor: pointer;
   margin: 19px 3px 0 0;
   background-image: url(../img/icon/sprite.png);
-  background-position: -62px -157px;
+  background-position: -155px -157px;
   width: 16px;
   height: 15px; }
 
@@ -975,7 +993,7 @@ body {
   cursor: pointer;
   margin: 1px 3px 0 0;
   background-image: url(../img/icon/sprite.png);
-  background-position: -62px -157px;
+  background-position: -155px -157px;
   width: 16px;
   height: 15px; }
 
@@ -1126,14 +1144,80 @@ body {
   color: #5d656c; }
 
 .sidebar_accordion {
-  height: 150px;
   background-color: #fbfbfb;
   border: 1px solid #dee1e4;
+  padding: 15px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px; }
+
+.sidebar_accordion_availability {
+  border-bottom: 1px solid #dee1e4;
+  padding-bottom: 15px; }
+
+.sidebar_accordion_availability_title {
+  margin: 0 25px 0 25px;
+  display: block;
+  color: #333333;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px; }
+
+.sidebar_accordion_availability_item {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 19px;
+  height: 19px;
+  cursor: pointer; }
+  .sidebar_accordion_availability_item:not(checked) {
+    display: none; }
+  .sidebar_accordion_availability_item:checked {
+    display: none; }
+  .sidebar_accordion_availability_item:not(checked) + .sidebar_accordion_availability_text {
+    position: relative;
+    padding: 0 0 0 28px; }
+  .sidebar_accordion_availability_item:checked + .sidebar_accordion_availability_text:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    background-color: #ff6600;
+    border: 3px solid #ff6600;
+    box-shadow: 0 0 0 2px #fbfbfb inset;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
+  .sidebar_accordion_availability_item:not(checked) + .sidebar_accordion_availability_text:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    border: 3px solid #dee1e4;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
+
+.sidebar_accordion_availability_text {
+  margin: 18px 0 0 25px;
+  cursor: pointer;
+  float: left;
+  color: #333333;
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px; }
 
 .footer {
   height: 220px;

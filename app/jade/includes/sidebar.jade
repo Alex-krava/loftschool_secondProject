@@ -1,3 +1,10 @@
 .sidebar
     +list(['Флагманы', 'Бюджетная линейка'], 'sidebar_nav', 1)
     .sidebar_accordion
+        form.sidebar_accordion_availability
+              span.sidebar_accordion_availability_title Наличие в магазинах
+              input(type="radio" id="first_availability" name="availability" checked="checked").sidebar_accordion_availability_item
+              label(for="first_availability").sidebar_accordion_availability_text  Во всех магазинах
+              input(type="radio" id="second_availability" name="availability").sidebar_accordion_availability_item
+              label(for="second_availability").sidebar_accordion_availability_text  В ближайшем ко мне магазине
+        

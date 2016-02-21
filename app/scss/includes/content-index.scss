@@ -108,14 +108,29 @@
         @include sprite($view-first);
     }
 }
+.catalogs-buttons_first--active{
+    &:before{
+        @include sprite($view-first-active);
+    }
+}
 .catalogs-buttons_second{
     &:before{
         @include sprite($view-second);
     }
 }
+.catalogs-buttons_second--active{
+    &:before{
+        @include sprite($view-second-active);
+    }
+}
 .catalogs-buttons_third{
     &:before{
         @include sprite($view-third);
+    }
+}
+.catalogs-buttons_third--active{
+    &:before{
+        @include sprite($view-third-active);
     }
 }
 .content-index_content{
