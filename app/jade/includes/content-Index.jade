@@ -2,8 +2,19 @@
     .content-index_header
         .select-text Cортировать по
         +select(['по цене', 'по популярности'], 'content-index_header_select', 0)
-        // .catalogs-buttons-text Вид каталога
-        // .catalogs-buttons
-            // .catalogs-buttons_first
-            // .catalogs-buttons_second
-            // .catalogs-buttons_third
+        .catalogs-buttons
+            .catalogs-buttons_text Вид каталога
+            .catalogs-buttons-style.catalogs-buttons_first
+            .catalogs-buttons-style.catalogs-buttons_second
+            .catalogs-buttons-style.catalogs-buttons_third
+            
+    .content-index_content--second
+        ul.content-index_content-list.content-index_content-list--second
+            +product_item()
+                
+                           
+           
+    
+        
+        
+           

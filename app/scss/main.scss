@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:700,400);
 @import "includes/sprite";
 @import 'includes/fonts';
 @import "mixins/mixin";
@@ -16,6 +17,7 @@ body{
 .content {
   display: table-row;
   height: 100%;
+  background-color: $color-page-back;
 }
 .content_container{
     width: 1100px;

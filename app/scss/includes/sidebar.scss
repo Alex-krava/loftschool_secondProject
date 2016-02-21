@@ -1,9 +1,44 @@
 .sidebar{
     width: 331px;
-    height: 400px;
     float: left;
-    margin-top: 155px;
+    margin-top: 25px;
     margin-right: 22px;
+}
+.sidebar_nav{
     border: 1px solid $color-border-search;
     @include borderRadius(5px);
+    overflow: hidden;
+    background-color: $color-content-back;
+    margin-bottom: 38px;
+}
+.sidebar_nav_list{
+    margin: 0;
+    padding: 0;
+}
+.sidebar_nav_item{
+    border-bottom: 1px solid $color-border-search;
+    list-style: none;
+    &:last-child{
+        border-bottom: none;
+    }
+}
+.sidebar_nav_link{
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    padding: 12px 27px;
+    @include text-OpenSans(normal, normal, 14px);
+    color: $color-text-side-nav;
+}
+.sidebar_nav_link-active{
+    background-color: $color-back-nav-side-hover;
+    color: $color-text-side-nav-hover;
+}
+
+.sidebar_accordion{
+    height: 150px;
+    background-color: $color-content-back;
+    border: 1px solid $color-border-search;
+    @include borderRadius(5px);
+    @extend %clearfix;
 }

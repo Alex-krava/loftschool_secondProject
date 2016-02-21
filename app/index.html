@@ -4,10 +4,10 @@
   <meta charset="UTF-8"/>
   <title>Document</title>
   <!-- build:css css/vendor.min.css-->
-  <link rel="stylesheet" href="bower/select2/dist/css/select2.css"/>
   <!-- bower:css-->
   <link rel="stylesheet" href="bower/normalize-css/normalize.css" />
   <!-- endbower-->
+  <link rel="stylesheet" href="bower/select2/dist/css/select2.css"/>
   <!-- endbuild-->
   <!-- build:css css/main.min.css-->
   <link rel="stylesheet" href="css/main.css"/>
@@ -70,7 +70,15 @@
               </ul>
             </div>
         <div class="page-title">Мобильные телефоны</div>
-        <div class="sidebar"></div>
+        <div class="sidebar">
+              <div class="sidebar_nav">
+                <ul class="sidebar_nav_list">
+                  <li class="sidebar_nav_item"><a href="#" class="sidebar_nav_link">Флагманы</a></li>
+                  <li class="sidebar_nav_item"><a href="#" class="sidebar_nav_link sidebar_nav_link-active">Бюджетная линейка</a></li>
+                </ul>
+              </div>
+          <div class="sidebar_accordion"></div>
+        </div>
         <div class="content-index">
           <div class="content-index_header">
             <div class="select-text">Cортировать по</div>
@@ -78,12 +86,42 @@
                   <option autofocus="autofocus" class="content-index_header_select">по цене</option>
                   <option class="content-index_header_select">по популярности</option>
                 </select>
-            <!-- .catalogs-buttons-text Вид каталога-->
-            <!-- .catalogs-buttons
-            // .catalogs-buttons_first
-            // .catalogs-buttons_second
-            // .catalogs-buttons_third
-            -->
+            <div class="catalogs-buttons">
+              <div class="catalogs-buttons_text">Вид каталога</div>
+              <div class="catalogs-buttons-style catalogs-buttons_first"></div>
+              <div class="catalogs-buttons-style catalogs-buttons_second"></div>
+              <div class="catalogs-buttons-style catalogs-buttons_third"></div>
+            </div>
+          </div>
+          <div class="content-index_content--second">
+            <ul class="content-index_content-list content-index_content-list--second">
+                  <li class="content-index_content-item">
+                    <div class="content-index_content-item_photo-code">
+                      <div class="content-index_content-item_photo">
+                        <div class="content-index_content-item_photo_big"><img src="img/products/samsung1b.png" alt="s3" class="content-index_content-item_photo_img1"/><img src="img/products/samsung2b.png" alt="s3" class="content-index_content-item_photo_img2"/><img src="img/products/samsung3b.png" alt="s3" class="content-index_content-item_photo_img3"/></div>
+                        <div class="content-index_content-item_photo_first content-index_content-item_photo_small"><img src="img/products/samsung1l.png" alt="s3" class="content-index_content-item_photo_img-l1"/></div>
+                        <div class="content-index_content-item_photo_second content-index_content-item_photo_small"><img src="img/products/samsung2l.png" alt="s3" class="content-index_content-item_photo_img-l2"/></div>
+                        <div class="content-index_content-item_photo_third content-index_content-item_photo_small"><img src="img/products/samsung3l.png" alt="s3" class="content-index_content-item_photo_img-l3"/></div>
+                      </div>
+                      <div class="content-index_content-item_code">Артикул<span class="content-index_content-item_code_number">189238</span></div>
+                    </div>
+                    <div class="content-index_content-item_title"><span class="content-index_content-item_title_product">Смартфон </span><span class="content-index_content-item_title_name">Samsung GT-I9301I GALAXY S 3</span><span class="content-index_content-item_title_about">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц</span>
+                      <ul class="charactiristic">
+                        <li class="charactiristic_item"><span class="charactiristic_item_text-left">Тип SIM-карты</span><span class="charactiristic_item_text-right">Micro-SIM</span></li>
+                        <li class="charactiristic_item"><span class="charactiristic_item_text-left">Количество SIM-карт</span><span class="charactiristic_item_text-right">1</span></li>
+                        <li class="charactiristic_item"><span class="charactiristic_item_text-left">Цвет</span><span class="charactiristic_item_text-right">Белый</span></li>
+                        <li class="charactiristic_item"><span class="charactiristic_item_text-left">ОС</span><span class="charactiristic_item_text-right">Android</span></li>
+                        <li class="charactiristic_item"><span class="charactiristic_item_text-left">Связь 3G</span><span class="charactiristic_item_text-right">Есть</span></li>
+                        <li class="charactiristic_item"><span class="charactiristic_item_text-left">4G (LTE)</span><span class="charactiristic_item_text-right">Нет</span></li>
+                        <li class="charactiristic_item"><span class="charactiristic_item_text-left">GPS-модуль</span><span class="charactiristic_item_text-right">Есть</span></li>
+                      </ul>
+                      <div class="content-index_content-item_title_rating"><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star"></span><span class="content-index_content-item_title_rating_number">4</span></div>
+                    </div>
+                    <div class="content-index_content-item_prise"><span class="content-index_content-item_prise_rating">11 290 </span><span class="content-index_content-item_prise_rub">&#8399;</span></div>
+                    <div class="content-index_content-item_availability">В наличии</div>
+                    <button class="content-index_content-item_button">В корзину</button>
+                  </li>
+            </ul>
           </div>
         </div>
       </div>

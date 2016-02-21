@@ -3,7 +3,6 @@
     list-style: none;
     padding: 0;
     @extend %clearfix;
-    color: $color-text-header-aside;
     font-size: 16px;
     @include text-OpenSans(normal, normal, 14px);
 }
@@ -13,7 +12,7 @@
 .breadcrumbs_link{
     text-decoration: none;
     margin-right: 3px;
-
+    color: $color-text-header-aside;
 }
 .breadcrumbs_link-active{
     color: $color-text-header-aside-active;
