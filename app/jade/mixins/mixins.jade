@@ -23,7 +23,17 @@ mixin select(items, className, active)
                 option(class="#{className}" autofocus)= item
             else
                 option(class="#{className}")= item
-               
+
+mixin colors(items, className, active)
+    form(class="#{className}")
+        each item, key in items
+            if key == active
+                input(type="checkbox" id="#{item}" class="#{className}_item--active #{className}_item #{className}_#{item}")
+                label(for="#{item}" class="#{className}_label--active #{className}_label #{className}_#{item}")
+            else
+                input(type="checkbox" id="#{item}" class="#{className}_item #{className}_#{item}")
+                label(for="#{item}" class="#{className}_label #{className}_#{item}")
+              
 mixin product_item()
     li.content-index_content-item
                 .content-index_content-item_photo-code
@@ -75,6 +85,6 @@ mixin product_item()
                         span.content-index_content-item_title_rating_number 4
                 .content-index_content-item_prise
                     span.content-index_content-item_prise_rating 11 290 
-                    span.content-index_content-item_prise_rub &#8399;
+                    span.content-index_content-item_prise_rub &#8381;
                 .content-index_content-item_availability В наличии
                 button.content-index_content-item_button В корзину

@@ -64,3 +64,44 @@
     }
     
 })();
+//SLIDER JQUERY UI
+(function () {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 30000,
+      values: [ 100, 13000 ],
+      slide: function( event, ui ) {
+        $( "#amount-first" ).val(ui.values[0]);
+        $( "#amount-second" ).val(ui.values[1]);
+      }
+    });
+    $( "#amount-first" ).val( $( "#slider-range" ).slider( "values", 0 ));
+    $( "#amount-second" ).val($( "#slider-range" ).slider( "values", 1 ));
+})();
+
+//ACCORDION
+(function(){
+    
+    $(".sidebar_accordion_availability_title").on("click", function(){
+            $(".sidebar_accordion_availability").toggleClass("accordion-height");
+            $(".sidebar_accordion_availability_title").toggleClass("accordion-cursor");
+    });
+    $(".sidebar_accordion_brands_title").on("click", function(){
+            $(".sidebar_accordion_brands").toggleClass("accordion-height");
+            $(".sidebar_accordion_brands_title").toggleClass("accordion-cursor");
+    });
+    $(".sidebar_accordion_price_title").on("click", function(){
+            $(".sidebar_accordion_price").toggleClass("accordion-height");
+            $(".sidebar_accordion_price_title").toggleClass("accordion-cursor");
+    });
+    $(".sidebar_accordion_color_title").on("click", function(){
+            $(".sidebar_accordion_color").toggleClass("accordion-height");
+            $(".sidebar_accordion_color_title").toggleClass("accordion-cursor");
+    });
+    $(".sidebar_accordion_form_title").on("click", function(){
+            $(".sidebar_accordion_os").toggleClass("accordion-height");
+            $(".sidebar_accordion_form_title").toggleClass("accordion-cursor");
+    });
+    
+})();

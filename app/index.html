@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="bower/normalize-css/normalize.css" />
   <!-- endbower-->
   <link rel="stylesheet" href="bower/select2/dist/css/select2.css"/>
+  <link rel="stylesheet" href="css/jquery-ui.css"/>
   <!-- endbuild-->
   <!-- build:css css/main.min.css-->
   <link rel="stylesheet" href="css/main.css"/>
@@ -78,12 +79,87 @@
                 </ul>
               </div>
           <div class="sidebar_accordion">
-            <form class="sidebar_accordion_availability"><span class="sidebar_accordion_availability_title">Наличие в магазинах</span>
-              <input type="radio" id="first_availability" name="availability" checked="checked" class="sidebar_accordion_availability_item"/>
-              <label for="first_availability" class="sidebar_accordion_availability_text"> Во всех магазинах</label>
-              <input type="radio" id="second_availability" name="availability" class="sidebar_accordion_availability_item"/>
-              <label for="second_availability" class="sidebar_accordion_availability_text"> В ближайшем ко мне магазине</label>
-            </form>
+            <div class="sidebar_accordion_availability">
+              <form class="sidebar_accordion_availability_form"><span class="sidebar_accordion_availability_title">Наличие в магазинах</span>
+                <input type="radio" id="first_availability" name="availability" checked="checked" class="sidebar_accordion_availability_item"/>
+                <label for="first_availability" class="sidebar_accordion_availability_text"> Во всех магазинах</label>
+                <input type="radio" id="second_availability" name="availability" class="sidebar_accordion_availability_item"/>
+                <label for="second_availability" class="sidebar_accordion_availability_text"> В ближайшем ко мне магазине</label>
+              </form>
+            </div>
+            <div class="sidebar_accordion_brands">
+              <form class="sidebar_accordion_brands_form"><span class="sidebar_accordion_brands_title">Бренды</span>
+                <input type="checkbox" id="first_brands" class="sidebar_accordion_brands_item"/>
+                <label for="first_brands" class="sidebar_accordion_brands_text"> Lenovo</label>
+                <input type="checkbox" id="second_brands" class="sidebar_accordion_brands_item"/>
+                <label for="second_brands" class="sidebar_accordion_brands_text"> Apple</label>
+                <input type="checkbox" id="third_brands" class="sidebar_accordion_brands_item"/>
+                <label for="third_brands" class="sidebar_accordion_brands_text"> Samsung</label>
+                <input type="checkbox" id="fourth_brands" class="sidebar_accordion_brands_item"/>
+                <label for="fourth_brands" class="sidebar_accordion_brands_text"> Asus</label>
+                <input type="checkbox" id="fifth_brands" class="sidebar_accordion_brands_item"/>
+                <label for="fifth_brands" class="sidebar_accordion_brands_text"> Motorola</label>
+                <input type="reset" id="reset_brands" value="" class="sidebar_accordion_brands_item-reset"/>
+                <label for="reset_brands" class="sidebar_accordion_brands_text-reset"> Сбросить фильтр</label>
+              </form>
+            </div>
+            <div class="sidebar_accordion_price">
+              <form class="sidebar_accordion_price_form"><span class="sidebar_accordion_price_title">Цена</span>
+                <div class="sidebar_accordion_price_slider">
+                  <label for="amount-first" class="sidebar_accordion_price_slider_label">от</label>
+                  <input type="text" id="amount-first" readonly="readonly"/>
+                  <label for="amount-second" class="sidebar_accordion_price_slider_label_first">до</label>
+                  <input type="text" id="amount-second" readonly="readonly"/>
+                </div>
+                <div id="slider-range"></div>
+              </form>
+            </div>
+            <div class="sidebar_accordion_color">
+              <div class="sidebar_accordion_color_container"><span class="sidebar_accordion_color_title">Цвет</span>
+                    <form class="sidebar_accordion_color_colors">
+                      <input type="checkbox" id="white" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_white"/>
+                      <label for="white" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_white"></label>
+                      <input type="checkbox" id="gray" class="sidebar_accordion_color_colors_item--active sidebar_accordion_color_colors_item sidebar_accordion_color_colors_gray"/>
+                      <label for="gray" class="sidebar_accordion_color_colors_label--active sidebar_accordion_color_colors_label sidebar_accordion_color_colors_gray"></label>
+                      <input type="checkbox" id="black" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_black"/>
+                      <label for="black" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_black"></label>
+                      <input type="checkbox" id="blue1" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_blue1"/>
+                      <label for="blue1" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_blue1"></label>
+                      <input type="checkbox" id="red" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_red"/>
+                      <label for="red" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_red"></label>
+                      <input type="checkbox" id="yellow" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_yellow"/>
+                      <label for="yellow" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_yellow"></label>
+                      <input type="checkbox" id="orange" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_orange"/>
+                      <label for="orange" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_orange"></label>
+                      <input type="checkbox" id="green" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_green"/>
+                      <label for="green" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_green"></label>
+                      <input type="checkbox" id="blue2" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_blue2"/>
+                      <label for="blue2" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_blue2"></label>
+                      <input type="checkbox" id="purple" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_purple"/>
+                      <label for="purple" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_purple"></label>
+                      <input type="checkbox" id="pink" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_pink"/>
+                      <label for="pink" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_pink"></label>
+                      <input type="checkbox" id="brown" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_brown"/>
+                      <label for="brown" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_brown"></label>
+                    </form>
+              </div>
+            </div>
+            <div class="sidebar_accordion_os">
+              <form class="sidebar_accordion_os_form"><span class="sidebar_accordion_form_title">Операционные системы</span>
+                <input type="checkbox" id="first_os" class="sidebar_accordion_os_item"/>
+                <label for="first_os" class="sidebar_accordion_os_text"> Android</label>
+                <input type="checkbox" id="second_os" class="sidebar_accordion_os_item"/>
+                <label for="second_os" class="sidebar_accordion_os_text"> iOS</label>
+                <input type="checkbox" id="third_os" class="sidebar_accordion_os_item"/>
+                <label for="third_os" class="sidebar_accordion_os_text"> Windows Mobile</label>
+                <input type="checkbox" id="fourth_os" class="sidebar_accordion_os_item"/>
+                <label for="fourth_os" class="sidebar_accordion_os_text"> Symbian</label>
+                <input type="checkbox" id="fifth_os" class="sidebar_accordion_os_item"/>
+                <label for="fifth_os" class="sidebar_accordion_os_text"> Custom</label>
+                <input type="reset" id="reset_os" class="sidebar_accordion_os_item-reset"/>
+                <label for="reset_os" class="sidebar_accordion_os_text-reset"> Сбросить фильтр</label>
+              </form>
+            </div>
           </div>
         </div>
         <div class="content-index">
@@ -124,7 +200,7 @@
                       </ul>
                       <div class="content-index_content-item_title_rating"><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star"></span><span class="content-index_content-item_title_rating_number">4</span></div>
                     </div>
-                    <div class="content-index_content-item_prise"><span class="content-index_content-item_prise_rating">11 290 </span><span class="content-index_content-item_prise_rub">&#8399;</span></div>
+                    <div class="content-index_content-item_prise"><span class="content-index_content-item_prise_rating">11 290 </span><span class="content-index_content-item_prise_rub">&#8381;</span></div>
                     <div class="content-index_content-item_availability">В наличии</div>
                     <button class="content-index_content-item_button">В корзину</button>
                   </li>
@@ -140,6 +216,7 @@
   <script src="bower/jquery/dist/jquery.js"></script>
   <script src="bower/select2/dist/js/select2.js"></script>
   <!--endbower-->
+  <script src="js/jquery-ui.js"></script>
   <!-- endbuild-->
   <!-- build:js js/main.min.js-->
   <script src="js/main.js"></script>
