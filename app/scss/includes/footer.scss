@@ -1,4 +1,106 @@
 .footer {
    height: 220px;
-   background-color:#333333;
+   background:#333333 url(../img/footer-back.png) center center repeat-x;
+}
+.footer_first{
+    border-bottom: 1px solid #494949;
+    @extend %clearfix; 
+}
+.footer_first_container{
+    width: 1100px;
+    min-height: 191px;
+    @include margin-Auto();
+    @extend %clearfix;
+}
+.footer_first_container_logo{
+    padding-top:70px;
+    float: left;
+    @include box-sizing-border-box();
+}
+.social-food{
+    width: 550px;
+    float: right;
+    padding-top: 35px;
+    @extend %clearfix;
+}
+.social-food_list{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    float: right;
+    @extend %clearfix;
+}
+.social-food_item{
+    float: left;
+    margin-right: 25px;
+    
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.social-food_link_fb{
+    display: block;
+    @include sprite($facebook-footer);
+    
+    &:hover{
+        @include sprite($facebook-footer-hover);
+    }
+}
+.social-food_link_vk{
+    display: block;
+    @include sprite($vk-footer);
+    
+    &:hover{
+        @include sprite($vk-footer-hover);
+    }
+}
+.social-food_link_twitter{
+    display: block;
+    @include sprite($twitter-footer);
+    
+    &:hover{
+        @include sprite($twitter-footer-hover);
+    }
+}
+
+
+//==========================
+.menu-footer{
+    width: 550px;
+    float: right;
+    @extend %clearfix;
+    padding-top: 25px;
+}
+.menu-footer_list{
+    list-style: none;
+    @extend %clearfix;
+    margin: 0 0 0 -24px;
+    line-height:2;
+    padding: 0;
+    text-align: right;
+}
+.menu-footer_item{
+    display: inline;
+    margin-left: 25px;
+}
+.menu-footer_link{
+    text-decoration: underline;
+    color: #ffffff;
+    @include text-OpenSans(normal, normal, 14px);
+    @include transition(.2s, all);
+    box-sizing: border-box;
+        
+    &:not(.menu-footer_link-active):hover{
+        opacity: 0.8;
+    }
+}
+//==========================
+
+
+
+.footer_second{
+    text-align: center;
+    color: #fff;
+    line-height: 2;
+    @include text-OpenSans(normal, normal, 12px);
 }

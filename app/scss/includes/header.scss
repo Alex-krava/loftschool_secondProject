@@ -1,6 +1,6 @@
 .header {
    min-height: 173px;
-   min-width: 1256px;
+   min-width: 1100px;
 }
 .header_first{
     height: 77px;
@@ -14,7 +14,7 @@
 }
 .social-head{
     @extend %clearfix;
-    width: 200px; 
+    min-width: 200px; 
 }
 .social-head_list{
     margin: 0;

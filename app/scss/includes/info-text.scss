@@ -1,0 +1,25 @@
+.info-text{
+    float: none;
+    @extend %clearfix;
+}
+.info-text_title{
+    color: $color-text-header-aside;
+    @include text-OpenSans(bold, normal, 20px);
+}
+.info-text_container{
+    text-align: justify;
+    text-indent: 35px;
+    color: $color-text-header-aside;
+    @include text-OpenSans(normal, normal, 14px);
+}
+//style columnizer
+.first.column{
+    width: 550px !important;
+    padding-right: 18px !important;
+    @include box-sizing-border-box();
+}
+.last.column{
+    width: 550px !important;
+    padding-left: 18px !important;
+    @include box-sizing-border-box();
+}

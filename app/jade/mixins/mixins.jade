@@ -33,49 +33,61 @@ mixin colors(items, className, active)
             else
                 input(type="checkbox" id="#{item}" class="#{className}_item #{className}_#{item}")
                 label(for="#{item}" class="#{className}_label #{className}_#{item}")
-              
-mixin product_item()
+
+mixin nav-content(items, className, active)
+    ul(class="#{className}")
+        li(class="#{className}_left")
+        each item, key in items
+            if key == active
+                li(class="#{className}_item--active")= item
+             else
+                li(class="#{className}_item")= item
+         li(class="#{className}_right")
+             
+mixin product_item(urlBigImg, urlSmallImg1, urlSmallImg2, urlSmallImg3, numberCode, smartName, smartAbout, typeCard, numberCard, color, os, threeG, fourG, gps, price)
     li.content-index_content-item
                 .content-index_content-item_photo-code
                     .content-index_content-item_photo
                         .content-index_content-item_photo_big
-                            img.content-index_content-item_photo_img1(src="img/products/samsung1b.png", alt="s3")
-                            img.content-index_content-item_photo_img2(src="img/products/samsung2b.png", alt="s3")  
-                            img.content-index_content-item_photo_img3(src="img/products/samsung3b.png", alt="s3")                
-                        .content-index_content-item_photo_first.content-index_content-item_photo_small
-                            img.content-index_content-item_photo_img-l1(src="img/products/samsung1l.png", alt="s3")
-                        .content-index_content-item_photo_second.content-index_content-item_photo_small
-                            img.content-index_content-item_photo_img-l2(src="img/products/samsung2l.png", alt="s3")
-                        .content-index_content-item_photo_third.content-index_content-item_photo_small
-                            img.content-index_content-item_photo_img-l3(src="img/products/samsung3l.png", alt="s3")
+                            img.content-index_content-item_photo_img1(src="#{urlBigImg}", alt="img")
+                        ul.content-index_content-item_photo_img                
+                            li.content-index_content-item_photo_first.content-index_content-item_photo_small
+                                a.content-index_content-item_photo_small_link
+                                    img.content-index_content-item_photo_img-l1(src="#{urlSmallImg1}", alt="img")
+                            li.content-index_content-item_photo_second.content-index_content-item_photo_small
+                                a.content-index_content-item_photo_small_link
+                                    img.content-index_content-item_photo_img-l2(src="#{urlSmallImg2}", alt="img")
+                            li.content-index_content-item_photo_third.content-index_content-item_photo_small
+                                a.content-index_content-item_photo_small_link
+                                    img.content-index_content-item_photo_img-l3(src="#{urlSmallImg3}", alt="img")
                     .content-index_content-item_code Артикул
-                        span.content-index_content-item_code_number 189238
+                        span.content-index_content-item_code_number #{numberCode}
                 .content-index_content-item_title
                     span.content-index_content-item_title_product Смартфон 
-                    span.content-index_content-item_title_name Samsung GT-I9301I GALAXY S 3
-                    span.content-index_content-item_title_about Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц
+                    span.content-index_content-item_title_name #{smartName}
+                    span.content-index_content-item_title_about #{smartAbout}
                     ul.charactiristic
                         li.charactiristic_item
                             span.charactiristic_item_text-left Тип SIM-карты
-                            span.charactiristic_item_text-right Micro-SIM
+                            span.charactiristic_item_text-right #{typeCard}
                         li.charactiristic_item
                             span.charactiristic_item_text-left Количество SIM-карт
-                            span.charactiristic_item_text-right 1
+                            span.charactiristic_item_text-right #{numberCard}
                         li.charactiristic_item
                             span.charactiristic_item_text-left Цвет
-                            span.charactiristic_item_text-right Белый
+                            span.charactiristic_item_text-right #{color}
                         li.charactiristic_item
                             span.charactiristic_item_text-left ОС
-                            span.charactiristic_item_text-right Android
+                            span.charactiristic_item_text-right #{os}
                         li.charactiristic_item
                             span.charactiristic_item_text-left Связь 3G
-                            span.charactiristic_item_text-right Есть
+                            span.charactiristic_item_text-right #{threeG}
                         li.charactiristic_item
                             span.charactiristic_item_text-left 4G (LTE)
-                            span.charactiristic_item_text-right Нет
+                            span.charactiristic_item_text-right #{fourG}
                         li.charactiristic_item
                             span.charactiristic_item_text-left GPS-модуль
-                            span.charactiristic_item_text-right Есть
+                            span.charactiristic_item_text-right #{gps}
                     .content-index_content-item_title_rating
                         span.content-index_content-item_title_rating_star-total
                         span.content-index_content-item_title_rating_star-total
@@ -84,7 +96,7 @@ mixin product_item()
                         span.content-index_content-item_title_rating_star
                         span.content-index_content-item_title_rating_number 4
                 .content-index_content-item_prise
-                    span.content-index_content-item_prise_rating 11 290 
+                    span.content-index_content-item_prise_rating #{price} 
                     span.content-index_content-item_prise_rub &#8381;
                 .content-index_content-item_availability В наличии
                 button.content-index_content-item_button В корзину

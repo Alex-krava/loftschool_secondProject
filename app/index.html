@@ -64,152 +64,228 @@
     </div>
     <div class="content">
       <div class="content_container">
-            <div class="breadcrumbs">
-              <ul class="breadcrumbs_list">
-                <li class="breadcrumbs_item"><a href="#" class="breadcrumbs_link">Главная &gt;</a></li>
-                <li class="breadcrumbs_item"><a href="#" class="breadcrumbs_link breadcrumbs_link-active">Каталог</a></li>
-              </ul>
-            </div>
-        <div class="page-title">Мобильные телефоны</div>
-        <div class="sidebar">
-              <div class="sidebar_nav">
-                <ul class="sidebar_nav_list">
-                  <li class="sidebar_nav_item"><a href="#" class="sidebar_nav_link">Флагманы</a></li>
-                  <li class="sidebar_nav_item"><a href="#" class="sidebar_nav_link sidebar_nav_link-active">Бюджетная линейка</a></li>
+        <div class="content_container_main"> 
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs_list">
+                  <li class="breadcrumbs_item"><a href="#" class="breadcrumbs_link">Главная &gt;</a></li>
+                  <li class="breadcrumbs_item"><a href="#" class="breadcrumbs_link breadcrumbs_link-active">Каталог</a></li>
                 </ul>
               </div>
-          <div class="sidebar_accordion">
-            <div class="sidebar_accordion_availability">
-              <form class="sidebar_accordion_availability_form"><span class="sidebar_accordion_availability_title">Наличие в магазинах</span>
-                <input type="radio" id="first_availability" name="availability" checked="checked" class="sidebar_accordion_availability_item"/>
-                <label for="first_availability" class="sidebar_accordion_availability_text"> Во всех магазинах</label>
-                <input type="radio" id="second_availability" name="availability" class="sidebar_accordion_availability_item"/>
-                <label for="second_availability" class="sidebar_accordion_availability_text"> В ближайшем ко мне магазине</label>
-              </form>
-            </div>
-            <div class="sidebar_accordion_brands">
-              <form class="sidebar_accordion_brands_form"><span class="sidebar_accordion_brands_title">Бренды</span>
-                <input type="checkbox" id="first_brands" class="sidebar_accordion_brands_item"/>
-                <label for="first_brands" class="sidebar_accordion_brands_text"> Lenovo</label>
-                <input type="checkbox" id="second_brands" class="sidebar_accordion_brands_item"/>
-                <label for="second_brands" class="sidebar_accordion_brands_text"> Apple</label>
-                <input type="checkbox" id="third_brands" class="sidebar_accordion_brands_item"/>
-                <label for="third_brands" class="sidebar_accordion_brands_text"> Samsung</label>
-                <input type="checkbox" id="fourth_brands" class="sidebar_accordion_brands_item"/>
-                <label for="fourth_brands" class="sidebar_accordion_brands_text"> Asus</label>
-                <input type="checkbox" id="fifth_brands" class="sidebar_accordion_brands_item"/>
-                <label for="fifth_brands" class="sidebar_accordion_brands_text"> Motorola</label>
-                <input type="reset" id="reset_brands" value="" class="sidebar_accordion_brands_item-reset"/>
-                <label for="reset_brands" class="sidebar_accordion_brands_text-reset"> Сбросить фильтр</label>
-              </form>
-            </div>
-            <div class="sidebar_accordion_price">
-              <form class="sidebar_accordion_price_form"><span class="sidebar_accordion_price_title">Цена</span>
-                <div class="sidebar_accordion_price_slider">
-                  <label for="amount-first" class="sidebar_accordion_price_slider_label">от</label>
-                  <input type="text" id="amount-first" readonly="readonly"/>
-                  <label for="amount-second" class="sidebar_accordion_price_slider_label_first">до</label>
-                  <input type="text" id="amount-second" readonly="readonly"/>
+          <div class="page-title">Мобильные телефоны</div>
+          <div class="sidebar">
+                <div class="sidebar_nav">
+                  <ul class="sidebar_nav_list">
+                    <li class="sidebar_nav_item"><a href="#" class="sidebar_nav_link">Флагманы</a></li>
+                    <li class="sidebar_nav_item"><a href="#" class="sidebar_nav_link sidebar_nav_link-active">Бюджетная линейка</a></li>
+                  </ul>
                 </div>
-                <div id="slider-range"></div>
-              </form>
-            </div>
-            <div class="sidebar_accordion_color">
-              <div class="sidebar_accordion_color_container"><span class="sidebar_accordion_color_title">Цвет</span>
-                    <form class="sidebar_accordion_color_colors">
-                      <input type="checkbox" id="white" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_white"/>
-                      <label for="white" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_white"></label>
-                      <input type="checkbox" id="gray" class="sidebar_accordion_color_colors_item--active sidebar_accordion_color_colors_item sidebar_accordion_color_colors_gray"/>
-                      <label for="gray" class="sidebar_accordion_color_colors_label--active sidebar_accordion_color_colors_label sidebar_accordion_color_colors_gray"></label>
-                      <input type="checkbox" id="black" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_black"/>
-                      <label for="black" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_black"></label>
-                      <input type="checkbox" id="blue1" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_blue1"/>
-                      <label for="blue1" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_blue1"></label>
-                      <input type="checkbox" id="red" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_red"/>
-                      <label for="red" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_red"></label>
-                      <input type="checkbox" id="yellow" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_yellow"/>
-                      <label for="yellow" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_yellow"></label>
-                      <input type="checkbox" id="orange" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_orange"/>
-                      <label for="orange" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_orange"></label>
-                      <input type="checkbox" id="green" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_green"/>
-                      <label for="green" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_green"></label>
-                      <input type="checkbox" id="blue2" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_blue2"/>
-                      <label for="blue2" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_blue2"></label>
-                      <input type="checkbox" id="purple" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_purple"/>
-                      <label for="purple" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_purple"></label>
-                      <input type="checkbox" id="pink" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_pink"/>
-                      <label for="pink" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_pink"></label>
-                      <input type="checkbox" id="brown" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_brown"/>
-                      <label for="brown" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_brown"></label>
-                    </form>
+            <div class="sidebar_accordion">
+              <div class="sidebar_accordion_availability">
+                <form class="sidebar_accordion_availability_form"><span class="sidebar_accordion_availability_title">Наличие в магазинах</span>
+                  <input type="radio" id="first_availability" name="availability" checked="checked" class="sidebar_accordion_availability_item"/>
+                  <label for="first_availability" class="sidebar_accordion_availability_text"> Во всех магазинах</label>
+                  <input type="radio" id="second_availability" name="availability" class="sidebar_accordion_availability_item"/>
+                  <label for="second_availability" class="sidebar_accordion_availability_text"> В ближайшем ко мне магазине</label>
+                </form>
+              </div>
+              <div class="sidebar_accordion_brands">
+                <form class="sidebar_accordion_brands_form"><span class="sidebar_accordion_brands_title">Бренды</span>
+                  <input type="checkbox" id="first_brands" class="sidebar_accordion_brands_item"/>
+                  <label for="first_brands" class="sidebar_accordion_brands_text"> Lenovo</label>
+                  <input type="checkbox" id="second_brands" class="sidebar_accordion_brands_item"/>
+                  <label for="second_brands" class="sidebar_accordion_brands_text"> Apple</label>
+                  <input type="checkbox" id="third_brands" class="sidebar_accordion_brands_item"/>
+                  <label for="third_brands" class="sidebar_accordion_brands_text"> Samsung</label>
+                  <input type="checkbox" id="fourth_brands" class="sidebar_accordion_brands_item"/>
+                  <label for="fourth_brands" class="sidebar_accordion_brands_text"> Asus</label>
+                  <input type="checkbox" id="fifth_brands" class="sidebar_accordion_brands_item"/>
+                  <label for="fifth_brands" class="sidebar_accordion_brands_text"> Motorola</label>
+                  <input type="reset" id="reset_brands" value="" class="sidebar_accordion_brands_item-reset"/>
+                  <label for="reset_brands" class="sidebar_accordion_brands_text-reset"> Сбросить фильтр</label>
+                </form>
+              </div>
+              <div class="sidebar_accordion_price">
+                <form class="sidebar_accordion_price_form"><span class="sidebar_accordion_price_title">Цена</span>
+                  <div class="sidebar_accordion_price_slider">
+                    <label for="amount-first" class="sidebar_accordion_price_slider_label">от</label>
+                    <input type="text" id="amount-first" readonly="readonly"/>
+                    <label for="amount-second" class="sidebar_accordion_price_slider_label_first">до</label>
+                    <input type="text" id="amount-second" readonly="readonly"/>
+                  </div>
+                  <div id="slider-range"></div>
+                </form>
+              </div>
+              <div class="sidebar_accordion_color">
+                <div class="sidebar_accordion_color_container"><span class="sidebar_accordion_color_title">Цвет</span>
+                      <form class="sidebar_accordion_color_colors">
+                        <input type="checkbox" id="white" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_white"/>
+                        <label for="white" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_white"></label>
+                        <input type="checkbox" id="gray" class="sidebar_accordion_color_colors_item--active sidebar_accordion_color_colors_item sidebar_accordion_color_colors_gray"/>
+                        <label for="gray" class="sidebar_accordion_color_colors_label--active sidebar_accordion_color_colors_label sidebar_accordion_color_colors_gray"></label>
+                        <input type="checkbox" id="black" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_black"/>
+                        <label for="black" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_black"></label>
+                        <input type="checkbox" id="blue1" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_blue1"/>
+                        <label for="blue1" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_blue1"></label>
+                        <input type="checkbox" id="red" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_red"/>
+                        <label for="red" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_red"></label>
+                        <input type="checkbox" id="yellow" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_yellow"/>
+                        <label for="yellow" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_yellow"></label>
+                        <input type="checkbox" id="orange" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_orange"/>
+                        <label for="orange" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_orange"></label>
+                        <input type="checkbox" id="green" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_green"/>
+                        <label for="green" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_green"></label>
+                        <input type="checkbox" id="blue2" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_blue2"/>
+                        <label for="blue2" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_blue2"></label>
+                        <input type="checkbox" id="purple" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_purple"/>
+                        <label for="purple" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_purple"></label>
+                        <input type="checkbox" id="pink" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_pink"/>
+                        <label for="pink" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_pink"></label>
+                        <input type="checkbox" id="brown" class="sidebar_accordion_color_colors_item sidebar_accordion_color_colors_brown"/>
+                        <label for="brown" class="sidebar_accordion_color_colors_label sidebar_accordion_color_colors_brown"></label>
+                      </form>
+                </div>
+              </div>
+              <div class="sidebar_accordion_os">
+                <form class="sidebar_accordion_os_form"><span class="sidebar_accordion_form_title">Операционные системы</span>
+                  <input type="checkbox" id="first_os" class="sidebar_accordion_os_item"/>
+                  <label for="first_os" class="sidebar_accordion_os_text"> Android</label>
+                  <input type="checkbox" id="second_os" class="sidebar_accordion_os_item"/>
+                  <label for="second_os" class="sidebar_accordion_os_text"> iOS</label>
+                  <input type="checkbox" id="third_os" class="sidebar_accordion_os_item"/>
+                  <label for="third_os" class="sidebar_accordion_os_text"> Windows Mobile</label>
+                  <input type="checkbox" id="fourth_os" class="sidebar_accordion_os_item"/>
+                  <label for="fourth_os" class="sidebar_accordion_os_text"> Symbian</label>
+                  <input type="checkbox" id="fifth_os" class="sidebar_accordion_os_item"/>
+                  <label for="fifth_os" class="sidebar_accordion_os_text"> Custom</label>
+                  <input type="reset" id="reset_os" class="sidebar_accordion_os_item-reset"/>
+                  <label for="reset_os" class="sidebar_accordion_os_text-reset"> Сбросить фильтр</label>
+                </form>
               </div>
             </div>
-            <div class="sidebar_accordion_os">
-              <form class="sidebar_accordion_os_form"><span class="sidebar_accordion_form_title">Операционные системы</span>
-                <input type="checkbox" id="first_os" class="sidebar_accordion_os_item"/>
-                <label for="first_os" class="sidebar_accordion_os_text"> Android</label>
-                <input type="checkbox" id="second_os" class="sidebar_accordion_os_item"/>
-                <label for="second_os" class="sidebar_accordion_os_text"> iOS</label>
-                <input type="checkbox" id="third_os" class="sidebar_accordion_os_item"/>
-                <label for="third_os" class="sidebar_accordion_os_text"> Windows Mobile</label>
-                <input type="checkbox" id="fourth_os" class="sidebar_accordion_os_item"/>
-                <label for="fourth_os" class="sidebar_accordion_os_text"> Symbian</label>
-                <input type="checkbox" id="fifth_os" class="sidebar_accordion_os_item"/>
-                <label for="fifth_os" class="sidebar_accordion_os_text"> Custom</label>
-                <input type="reset" id="reset_os" class="sidebar_accordion_os_item-reset"/>
-                <label for="reset_os" class="sidebar_accordion_os_text-reset"> Сбросить фильтр</label>
-              </form>
+          </div>
+          <div class="content-index">
+            <div class="content-index_header">
+              <div class="select-text">Cортировать по</div>
+                  <select class="content-index_header_select">
+                    <option autofocus="autofocus" class="content-index_header_select">по цене</option>
+                    <option class="content-index_header_select">по популярности</option>
+                  </select>
+              <div class="catalogs-buttons">
+                <div class="catalogs-buttons_text">Вид каталога</div>
+                <div class="catalogs-buttons-style catalogs-buttons_first"></div>
+                <div class="catalogs-buttons-style catalogs-buttons_second--active"></div>
+                <div class="catalogs-buttons-style catalogs-buttons_third"></div>
+              </div>
+            </div>
+            <div class="content-index_content--second">
+              <ul class="content-index_content-list content-index_content-list--second">
+                    <li class="content-index_content-item">
+                      <div class="content-index_content-item_photo-code">
+                        <div class="content-index_content-item_photo">
+                          <div class="content-index_content-item_photo_big"><img src="img/products/samsung1b.png" alt="img" class="content-index_content-item_photo_img1"/></div>
+                          <ul class="content-index_content-item_photo_img">               
+                            <li class="content-index_content-item_photo_first content-index_content-item_photo_small"><a class="content-index_content-item_photo_small_link"><img src="img/products/samsung1l.png" alt="img" class="content-index_content-item_photo_img-l1"/></a></li>
+                            <li class="content-index_content-item_photo_second content-index_content-item_photo_small"><a class="content-index_content-item_photo_small_link"><img src="img/products/samsung2l.png" alt="img" class="content-index_content-item_photo_img-l2"/></a></li>
+                            <li class="content-index_content-item_photo_third content-index_content-item_photo_small"><a class="content-index_content-item_photo_small_link"><img src="img/products/samsung3l.png" alt="img" class="content-index_content-item_photo_img-l3"/></a></li>
+                          </ul>
+                        </div>
+                        <div class="content-index_content-item_code">Артикул<span class="content-index_content-item_code_number">189238</span></div>
+                      </div>
+                      <div class="content-index_content-item_title"><span class="content-index_content-item_title_product">Смартфон </span><span class="content-index_content-item_title_name">Samsung GT-I9301I GALAXY S 3</span><span class="content-index_content-item_title_about">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц</span>
+                        <ul class="charactiristic">
+                          <li class="charactiristic_item"><span class="charactiristic_item_text-left">Тип SIM-карты</span><span class="charactiristic_item_text-right">Micro-SIM</span></li>
+                          <li class="charactiristic_item"><span class="charactiristic_item_text-left">Количество SIM-карт</span><span class="charactiristic_item_text-right">1</span></li>
+                          <li class="charactiristic_item"><span class="charactiristic_item_text-left">Цвет</span><span class="charactiristic_item_text-right">Белый</span></li>
+                          <li class="charactiristic_item"><span class="charactiristic_item_text-left">ОС</span><span class="charactiristic_item_text-right">Android</span></li>
+                          <li class="charactiristic_item"><span class="charactiristic_item_text-left">Связь 3G</span><span class="charactiristic_item_text-right">Есть</span></li>
+                          <li class="charactiristic_item"><span class="charactiristic_item_text-left">4G (LTE)</span><span class="charactiristic_item_text-right">Нет</span></li>
+                          <li class="charactiristic_item"><span class="charactiristic_item_text-left">GPS-модуль</span><span class="charactiristic_item_text-right">Есть</span></li>
+                        </ul>
+                        <div class="content-index_content-item_title_rating"><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star"></span><span class="content-index_content-item_title_rating_number">4</span></div>
+                      </div>
+                      <div class="content-index_content-item_prise"><span class="content-index_content-item_prise_rating">11 290 </span><span class="content-index_content-item_prise_rub">&#8381;</span></div>
+                      <div class="content-index_content-item_availability">В наличии</div>
+                      <button class="content-index_content-item_button">В корзину</button>
+                    </li>
+                    <li class="content-index_content-item">
+                      <div class="content-index_content-item_photo-code">
+                        <div class="content-index_content-item_photo">
+                          <div class="content-index_content-item_photo_big"><img src="img/products/microsoft1b.png" alt="img" class="content-index_content-item_photo_img1"/></div>
+                          <ul class="content-index_content-item_photo_img">               
+                            <li class="content-index_content-item_photo_first content-index_content-item_photo_small"><a class="content-index_content-item_photo_small_link"><img src="img/products/microsoft1l.png" alt="img" class="content-index_content-item_photo_img-l1"/></a></li>
+                            <li class="content-index_content-item_photo_second content-index_content-item_photo_small"><a class="content-index_content-item_photo_small_link"><img src="img/products/microsoft2l.png" alt="img" class="content-index_content-item_photo_img-l2"/></a></li>
+                            <li class="content-index_content-item_photo_third content-index_content-item_photo_small"><a class="content-index_content-item_photo_small_link"><img src="img/products/microsoft3l.png" alt="img" class="content-index_content-item_photo_img-l3"/></a></li>
+                          </ul>
+                        </div>
+                        <div class="content-index_content-item_code">Артикул<span class="content-index_content-item_code_number">283135</span></div>
+                      </div>
+                      <div class="content-index_content-item_title"><span class="content-index_content-item_title_product">Смартфон </span><span class="content-index_content-item_title_name">Microsoft Lumia 640 RM-1077</span><span class="content-index_content-item_title_about">Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей. Этот многофункциональный смартфон уже содержит набор бесплатных сервисов Microsoft</span>
+                        <ul class="charactiristic">
+                          <li class="charactiristic_item"><span class="charactiristic_item_text-left">Тип SIM-карты</span><span class="charactiristic_item_text-right">Micro-SIM</span></li>
+                          <li class="charactiristic_item"><span class="charactiristic_item_text-left">Количество SIM-карт</span><span class="charactiristic_item_text-right">2</span></li>
+                          <li class="charactiristic_item"><span class="charactiristic_item_text-left">Цвет</span><span class="charactiristic_item_text-right">Белый</span></li>
+                          <li class="charactiristic_item"><span class="charactiristic_item_text-left">ОС</span><span class="charactiristic_item_text-right">Windows Phone</span></li>
+                          <li class="charactiristic_item"><span class="charactiristic_item_text-left">Связь 3G</span><span class="charactiristic_item_text-right">Есть</span></li>
+                          <li class="charactiristic_item"><span class="charactiristic_item_text-left">4G (LTE)</span><span class="charactiristic_item_text-right">Нет</span></li>
+                          <li class="charactiristic_item"><span class="charactiristic_item_text-left">GPS-модуль</span><span class="charactiristic_item_text-right">A-GPS</span></li>
+                        </ul>
+                        <div class="content-index_content-item_title_rating"><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star"></span><span class="content-index_content-item_title_rating_number">4</span></div>
+                      </div>
+                      <div class="content-index_content-item_prise"><span class="content-index_content-item_prise_rating">10 990 </span><span class="content-index_content-item_prise_rub">&#8381;</span></div>
+                      <div class="content-index_content-item_availability">В наличии</div>
+                      <button class="content-index_content-item_button">В корзину</button>
+                    </li>
+              </ul>
+            </div>
+            <div class="content-index_content--third">         
+                  <ul class="content-index_content--third_nav">
+                    <li class="content-index_content--third_nav_left"></li>
+                    <li class="content-index_content--third_nav_item--active">1</li>
+                    <li class="content-index_content--third_nav_item">2</li>
+                    <li class="content-index_content--third_nav_item">3</li>
+                    <li class="content-index_content--third_nav_right"></li>
+                  </ul>
             </div>
           </div>
         </div>
-        <div class="content-index">
-          <div class="content-index_header">
-            <div class="select-text">Cортировать по</div>
-                <select class="content-index_header_select">
-                  <option autofocus="autofocus" class="content-index_header_select">по цене</option>
-                  <option class="content-index_header_select">по популярности</option>
-                </select>
-            <div class="catalogs-buttons">
-              <div class="catalogs-buttons_text">Вид каталога</div>
-              <div class="catalogs-buttons-style catalogs-buttons_first"></div>
-              <div class="catalogs-buttons-style catalogs-buttons_second--active"></div>
-              <div class="catalogs-buttons-style catalogs-buttons_third"></div>
-            </div>
-          </div>
-          <div class="content-index_content--second">
-            <ul class="content-index_content-list content-index_content-list--second">
-                  <li class="content-index_content-item">
-                    <div class="content-index_content-item_photo-code">
-                      <div class="content-index_content-item_photo">
-                        <div class="content-index_content-item_photo_big"><img src="img/products/samsung1b.png" alt="s3" class="content-index_content-item_photo_img1"/><img src="img/products/samsung2b.png" alt="s3" class="content-index_content-item_photo_img2"/><img src="img/products/samsung3b.png" alt="s3" class="content-index_content-item_photo_img3"/></div>
-                        <div class="content-index_content-item_photo_first content-index_content-item_photo_small"><img src="img/products/samsung1l.png" alt="s3" class="content-index_content-item_photo_img-l1"/></div>
-                        <div class="content-index_content-item_photo_second content-index_content-item_photo_small"><img src="img/products/samsung2l.png" alt="s3" class="content-index_content-item_photo_img-l2"/></div>
-                        <div class="content-index_content-item_photo_third content-index_content-item_photo_small"><img src="img/products/samsung3l.png" alt="s3" class="content-index_content-item_photo_img-l3"/></div>
-                      </div>
-                      <div class="content-index_content-item_code">Артикул<span class="content-index_content-item_code_number">189238</span></div>
-                    </div>
-                    <div class="content-index_content-item_title"><span class="content-index_content-item_title_product">Смартфон </span><span class="content-index_content-item_title_name">Samsung GT-I9301I GALAXY S 3</span><span class="content-index_content-item_title_about">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц</span>
-                      <ul class="charactiristic">
-                        <li class="charactiristic_item"><span class="charactiristic_item_text-left">Тип SIM-карты</span><span class="charactiristic_item_text-right">Micro-SIM</span></li>
-                        <li class="charactiristic_item"><span class="charactiristic_item_text-left">Количество SIM-карт</span><span class="charactiristic_item_text-right">1</span></li>
-                        <li class="charactiristic_item"><span class="charactiristic_item_text-left">Цвет</span><span class="charactiristic_item_text-right">Белый</span></li>
-                        <li class="charactiristic_item"><span class="charactiristic_item_text-left">ОС</span><span class="charactiristic_item_text-right">Android</span></li>
-                        <li class="charactiristic_item"><span class="charactiristic_item_text-left">Связь 3G</span><span class="charactiristic_item_text-right">Есть</span></li>
-                        <li class="charactiristic_item"><span class="charactiristic_item_text-left">4G (LTE)</span><span class="charactiristic_item_text-right">Нет</span></li>
-                        <li class="charactiristic_item"><span class="charactiristic_item_text-left">GPS-модуль</span><span class="charactiristic_item_text-right">Есть</span></li>
-                      </ul>
-                      <div class="content-index_content-item_title_rating"><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star"></span><span class="content-index_content-item_title_rating_number">4</span></div>
-                    </div>
-                    <div class="content-index_content-item_prise"><span class="content-index_content-item_prise_rating">11 290 </span><span class="content-index_content-item_prise_rub">&#8381;</span></div>
-                    <div class="content-index_content-item_availability">В наличии</div>
-                    <button class="content-index_content-item_button">В корзину</button>
-                  </li>
-            </ul>
+        <div class="info-text"><span class="info-text_title">Важная информация</span>
+          <div class="info-text_container">
+            <p>Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.</p>
+            <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+            <p>Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+            <p>Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.</p>
+            <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+            <p>Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+      <div class="footer_first">
+        <div class="footer_first_container">
+          <div class="footer_first_container_logo"><a href="/"><img src="img/logo-foot.png" alt="cooltech"/></a></div>
+              <div class="social-food">
+                <ul class="social-food_list">
+                  <li class="social-food_item social-food_item_fb"><a href="#" class="social-food_link_fb"></a></li>
+                  <li class="social-food_item social-food_item_vk"><a href="#" class="social-food_link_vk"></a></li>
+                  <li class="social-food_item social-food_item_twitter"><a href="#" class="social-food_link_twitter"></a></li>
+                </ul>
+              </div>
+              <div class="menu-footer">
+                <ul class="menu-footer_list">
+                  <li class="menu-footer_item"><a href="#" class="menu-footer_link">Планшеты</a></li>
+                  <li class="menu-footer_item"><a href="#" class="menu-footer_link">Мобильные телефоны</a></li>
+                  <li class="menu-footer_item"><a href="#" class="menu-footer_link">Mp3 плеер</a></li>
+                  <li class="menu-footer_item"><a href="#" class="menu-footer_link">Персональные_компьютеры</a></li>
+                  <li class="menu-footer_item"><a href="#" class="menu-footer_link">Ноутбуки</a></li>
+                  <li class="menu-footer_item"><a href="#" class="menu-footer_link">Аксессуары</a></li>
+                  <li class="menu-footer_item"><a href="#" class="menu-footer_link">Бытовая_техника</a></li>
+                </ul>
+              </div>
+        </div>
+      </div>
+      <div class="footer_second">All rights reserved. 2015. no copy alowed</div>
+    </div>
   </div>
   <!-- build:js js/vendor.min.js-->
   <!-- bower:js-->
@@ -217,6 +293,7 @@
   <script src="bower/select2/dist/js/select2.js"></script>
   <!--endbower-->
   <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.columnizer.js"></script>
   <!-- endbuild-->
   <!-- build:js js/main.min.js-->
   <script src="js/main.js"></script>
