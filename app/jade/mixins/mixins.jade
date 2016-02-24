@@ -14,7 +14,7 @@ mixin social(items, className)
         ul(class="#{className}_list")
             each item in items
                     li(class="#{className}_item #{className}_item_#{item}")
-                        a(href="#" class="#{className}_link_#{item}")
+                        a(href="#" class="#{className}_link_#{item}" target="_blank")
 
 mixin select(items, className, active)
     select(class="#{className}")
@@ -88,13 +88,13 @@ mixin product_item(urlBigImg, urlSmallImg1, urlSmallImg2, urlSmallImg3, numberCo
                         li.charactiristic_item
                             span.charactiristic_item_text-left GPS-модуль
                             span.charactiristic_item_text-right #{gps}
-                    .content-index_content-item_title_rating
-                        span.content-index_content-item_title_rating_star-total
-                        span.content-index_content-item_title_rating_star-total
-                        span.content-index_content-item_title_rating_star-total
-                        span.content-index_content-item_title_rating_star-total
-                        span.content-index_content-item_title_rating_star
-                        span.content-index_content-item_title_rating_number 4
+                    ul.content-index_content-item_title_rating
+                        li.content-index_content-item_title_rating_star-total
+                        li.content-index_content-item_title_rating_star-total
+                        li.content-index_content-item_title_rating_star-total
+                        li.content-index_content-item_title_rating_star-total
+                        li.content-index_content-item_title_rating_star
+                        li.content-index_content-item_title_rating_number 4
                 .content-index_content-item_prise
                     span.content-index_content-item_prise_rating #{price} 
                     span.content-index_content-item_prise_rub &#8381;

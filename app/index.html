@@ -21,9 +21,9 @@
         <div class="header_first_container">
               <div class="social-head">
                 <ul class="social-head_list">
-                  <li class="social-head_item social-head_item_fb"><a href="#" class="social-head_link_fb"></a></li>
-                  <li class="social-head_item social-head_item_vk"><a href="#" class="social-head_link_vk"></a></li>
-                  <li class="social-head_item social-head_item_twitter"><a href="#" class="social-head_link_twitter"></a></li>
+                  <li class="social-head_item social-head_item_fb"><a href="#" target="_blank" class="social-head_link_fb"></a></li>
+                  <li class="social-head_item social-head_item_vk"><a href="#" target="_blank" class="social-head_link_vk"></a></li>
+                  <li class="social-head_item social-head_item_twitter"><a href="#" target="_blank" class="social-head_link_twitter"></a></li>
                 </ul>
               </div>
           <div class="head-contacts"><a href="https://www.google.com.ua/maps/place/%D0%9C%D0%B0%D1%8F%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB.,+6,+%D0%97%D0%B0%D0%BF%D1%80%D1%83%D0%B4%D0%BD%D1%8F,+%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+141960/@56.566418,37.4448678,17z/data=!3m1!4b1!4m2!3m1!1s0x46b4f616d72de7d3:0x4ff4f3fa5bc24009?hl=ru" target="_blank" class="head-contacts_loc">
@@ -35,9 +35,9 @@
       </div>
       <div class="header_second">
         <div class="header_second_container"><a href="/" class="logo"><img src="img/logo-head.png" alt="cooltech" class="logo_img"/></a>
-          <form class="search">
+          <form action="" method="GET" class="search">
             <input type="text" placeholder="Что будем искать" class="search_field"/>
-            <input type="button" value="Найти" class="search_button"/>
+            <input type="submit" value="Найти" class="search_button"/>
           </form>
               <div class="header-nav">
                 <ul class="header-nav_list">
@@ -54,7 +54,7 @@
             <ul class="menu_list">
               <li class="menu_item"><a href="#" class="menu_link">Планшеты</a></li>
               <li class="menu_item"><a href="#" class="menu_link menu_link-active">Мобильные телефоны</a></li>
-              <li class="menu_item"><a href="#" class="menu_link">Mp3 плеер</a></li>
+              <li class="menu_item"><a href="#" class="menu_link">Mp3 плееры</a></li>
               <li class="menu_item"><a href="#" class="menu_link">Персональные компьютеры</a></li>
               <li class="menu_item"><a href="#" class="menu_link">Ноутбуки</a></li>
               <li class="menu_item"><a href="#" class="menu_link">Аксессуары</a></li>
@@ -108,9 +108,9 @@
                 <form class="sidebar_accordion_price_form"><span class="sidebar_accordion_price_title">Цена</span>
                   <div class="sidebar_accordion_price_slider">
                     <label for="amount-first" class="sidebar_accordion_price_slider_label">от</label>
-                    <input type="text" id="amount-first" readonly="readonly"/>
+                    <input type="text" id="amount-first"/>
                     <label for="amount-second" class="sidebar_accordion_price_slider_label_first">до</label>
-                    <input type="text" id="amount-second" readonly="readonly"/>
+                    <input type="text" id="amount-second"/>
                   </div>
                   <div id="slider-range"></div>
                 </form>
@@ -201,7 +201,14 @@
                           <li class="charactiristic_item"><span class="charactiristic_item_text-left">4G (LTE)</span><span class="charactiristic_item_text-right">Нет</span></li>
                           <li class="charactiristic_item"><span class="charactiristic_item_text-left">GPS-модуль</span><span class="charactiristic_item_text-right">Есть</span></li>
                         </ul>
-                        <div class="content-index_content-item_title_rating"><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star"></span><span class="content-index_content-item_title_rating_number">4</span></div>
+                        <ul class="content-index_content-item_title_rating">
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star"></li>
+                          <li class="content-index_content-item_title_rating_number">4</li>
+                        </ul>
                       </div>
                       <div class="content-index_content-item_prise"><span class="content-index_content-item_prise_rating">11 290 </span><span class="content-index_content-item_prise_rub">&#8381;</span></div>
                       <div class="content-index_content-item_availability">В наличии</div>
@@ -229,7 +236,14 @@
                           <li class="charactiristic_item"><span class="charactiristic_item_text-left">4G (LTE)</span><span class="charactiristic_item_text-right">Нет</span></li>
                           <li class="charactiristic_item"><span class="charactiristic_item_text-left">GPS-модуль</span><span class="charactiristic_item_text-right">A-GPS</span></li>
                         </ul>
-                        <div class="content-index_content-item_title_rating"><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star"></span><span class="content-index_content-item_title_rating_number">4</span></div>
+                        <ul class="content-index_content-item_title_rating">
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star"></li>
+                          <li class="content-index_content-item_title_rating_number">4</li>
+                        </ul>
                       </div>
                       <div class="content-index_content-item_prise"><span class="content-index_content-item_prise_rating">10 990 </span><span class="content-index_content-item_prise_rub">&#8381;</span></div>
                       <div class="content-index_content-item_availability">В наличии</div>
@@ -257,7 +271,14 @@
                           <li class="charactiristic_item"><span class="charactiristic_item_text-left">4G (LTE)</span><span class="charactiristic_item_text-right">Нет</span></li>
                           <li class="charactiristic_item"><span class="charactiristic_item_text-left">GPS-модуль</span><span class="charactiristic_item_text-right">Есть</span></li>
                         </ul>
-                        <div class="content-index_content-item_title_rating"><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star"></span><span class="content-index_content-item_title_rating_number">4</span></div>
+                        <ul class="content-index_content-item_title_rating">
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star"></li>
+                          <li class="content-index_content-item_title_rating_number">4</li>
+                        </ul>
                       </div>
                       <div class="content-index_content-item_prise"><span class="content-index_content-item_prise_rating">9 900 </span><span class="content-index_content-item_prise_rub">&#8381;</span></div>
                       <div class="content-index_content-item_availability">В наличии</div>
@@ -285,7 +306,14 @@
                           <li class="charactiristic_item"><span class="charactiristic_item_text-left">4G (LTE)</span><span class="charactiristic_item_text-right">Нет</span></li>
                           <li class="charactiristic_item"><span class="charactiristic_item_text-left">GPS-модуль</span><span class="charactiristic_item_text-right">A-GPS</span></li>
                         </ul>
-                        <div class="content-index_content-item_title_rating"><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star"></span><span class="content-index_content-item_title_rating_number">4</span></div>
+                        <ul class="content-index_content-item_title_rating">
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star"></li>
+                          <li class="content-index_content-item_title_rating_number">4</li>
+                        </ul>
                       </div>
                       <div class="content-index_content-item_prise"><span class="content-index_content-item_prise_rating">8 990 </span><span class="content-index_content-item_prise_rub">&#8381;</span></div>
                       <div class="content-index_content-item_availability">В наличии</div>
@@ -313,7 +341,14 @@
                           <li class="charactiristic_item"><span class="charactiristic_item_text-left">4G (LTE)</span><span class="charactiristic_item_text-right">Нет</span></li>
                           <li class="charactiristic_item"><span class="charactiristic_item_text-left">GPS-модуль</span><span class="charactiristic_item_text-right">A-GPS</span></li>
                         </ul>
-                        <div class="content-index_content-item_title_rating"><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star"></span><span class="content-index_content-item_title_rating_number">4</span></div>
+                        <ul class="content-index_content-item_title_rating">
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star"></li>
+                          <li class="content-index_content-item_title_rating_number">4</li>
+                        </ul>
                       </div>
                       <div class="content-index_content-item_prise"><span class="content-index_content-item_prise_rating">5 390 </span><span class="content-index_content-item_prise_rub">&#8381;</span></div>
                       <div class="content-index_content-item_availability">В наличии</div>
@@ -341,7 +376,14 @@
                           <li class="charactiristic_item"><span class="charactiristic_item_text-left">4G (LTE)</span><span class="charactiristic_item_text-right">Нет</span></li>
                           <li class="charactiristic_item"><span class="charactiristic_item_text-left">GPS-модуль</span><span class="charactiristic_item_text-right">Есть</span></li>
                         </ul>
-                        <div class="content-index_content-item_title_rating"><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star"></span><span class="content-index_content-item_title_rating_number">4</span></div>
+                        <ul class="content-index_content-item_title_rating">
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star"></li>
+                          <li class="content-index_content-item_title_rating_number">4</li>
+                        </ul>
                       </div>
                       <div class="content-index_content-item_prise"><span class="content-index_content-item_prise_rating">4 990 </span><span class="content-index_content-item_prise_rub">&#8381;</span></div>
                       <div class="content-index_content-item_availability">В наличии</div>
@@ -369,7 +411,14 @@
                           <li class="charactiristic_item"><span class="charactiristic_item_text-left">4G (LTE)</span><span class="charactiristic_item_text-right">Нет</span></li>
                           <li class="charactiristic_item"><span class="charactiristic_item_text-left">GPS-модуль</span><span class="charactiristic_item_text-right">Есть</span></li>
                         </ul>
-                        <div class="content-index_content-item_title_rating"><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star"></span><span class="content-index_content-item_title_rating_number">4</span></div>
+                        <ul class="content-index_content-item_title_rating">
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star"></li>
+                          <li class="content-index_content-item_title_rating_number">4</li>
+                        </ul>
                       </div>
                       <div class="content-index_content-item_prise"><span class="content-index_content-item_prise_rating">3 990 </span><span class="content-index_content-item_prise_rub">&#8381;</span></div>
                       <div class="content-index_content-item_availability">В наличии</div>
@@ -397,7 +446,14 @@
                           <li class="charactiristic_item"><span class="charactiristic_item_text-left">4G (LTE)</span><span class="charactiristic_item_text-right">Нет</span></li>
                           <li class="charactiristic_item"><span class="charactiristic_item_text-left">GPS-модуль</span><span class="charactiristic_item_text-right">A-GPS</span></li>
                         </ul>
-                        <div class="content-index_content-item_title_rating"><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star"></span><span class="content-index_content-item_title_rating_number">4</span></div>
+                        <ul class="content-index_content-item_title_rating">
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star"></li>
+                          <li class="content-index_content-item_title_rating_number">4</li>
+                        </ul>
                       </div>
                       <div class="content-index_content-item_prise"><span class="content-index_content-item_prise_rating">3 290 </span><span class="content-index_content-item_prise_rub">&#8381;</span></div>
                       <div class="content-index_content-item_availability">В наличии</div>
@@ -425,7 +481,14 @@
                           <li class="charactiristic_item"><span class="charactiristic_item_text-left">4G (LTE)</span><span class="charactiristic_item_text-right">Нет</span></li>
                           <li class="charactiristic_item"><span class="charactiristic_item_text-left">GPS-модуль</span><span class="charactiristic_item_text-right">Нет</span></li>
                         </ul>
-                        <div class="content-index_content-item_title_rating"><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star-total"></span><span class="content-index_content-item_title_rating_star"></span><span class="content-index_content-item_title_rating_number">4</span></div>
+                        <ul class="content-index_content-item_title_rating">
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star-total"></li>
+                          <li class="content-index_content-item_title_rating_star"></li>
+                          <li class="content-index_content-item_title_rating_number">4</li>
+                        </ul>
                       </div>
                       <div class="content-index_content-item_prise"><span class="content-index_content-item_prise_rating">1 790 </span><span class="content-index_content-item_prise_rub">&#8381;</span></div>
                       <div class="content-index_content-item_availability">В наличии</div>
@@ -462,16 +525,16 @@
           <div class="footer_first_container_logo"><a href="/"><img src="img/logo-foot.png" alt="cooltech"/></a></div>
               <div class="social-food">
                 <ul class="social-food_list">
-                  <li class="social-food_item social-food_item_fb"><a href="#" class="social-food_link_fb"></a></li>
-                  <li class="social-food_item social-food_item_vk"><a href="#" class="social-food_link_vk"></a></li>
-                  <li class="social-food_item social-food_item_twitter"><a href="#" class="social-food_link_twitter"></a></li>
+                  <li class="social-food_item social-food_item_fb"><a href="#" target="_blank" class="social-food_link_fb"></a></li>
+                  <li class="social-food_item social-food_item_vk"><a href="#" target="_blank" class="social-food_link_vk"></a></li>
+                  <li class="social-food_item social-food_item_twitter"><a href="#" target="_blank" class="social-food_link_twitter"></a></li>
                 </ul>
               </div>
               <div class="menu-footer">
                 <ul class="menu-footer_list">
                   <li class="menu-footer_item"><a href="#" class="menu-footer_link">Планшеты</a></li>
                   <li class="menu-footer_item"><a href="#" class="menu-footer_link">Мобильные телефоны</a></li>
-                  <li class="menu-footer_item"><a href="#" class="menu-footer_link">Mp3 плеер</a></li>
+                  <li class="menu-footer_item"><a href="#" class="menu-footer_link">Mp3 плееры</a></li>
                   <li class="menu-footer_item"><a href="#" class="menu-footer_link">Персональные_компьютеры</a></li>
                   <li class="menu-footer_item"><a href="#" class="menu-footer_link">Ноутбуки</a></li>
                   <li class="menu-footer_item"><a href="#" class="menu-footer_link">Аксессуары</a></li>

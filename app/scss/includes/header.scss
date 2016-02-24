@@ -96,11 +96,9 @@
 }
 .header_second_container{
     width: 1100px;
-    height: 100%;
     @include margin-Auto();
     @include box-sizing-border-box();
-    @extend %clearfix;
-    
+    @extend %clearfix;    
 }
 .logo{
     padding-top: 28px;
@@ -109,13 +107,13 @@
 }
 .search{
     float: left;
-    margin: 30px 99px 30px 55px;
-    position: relative;
+    margin: 30px 0 30px 55px;
 }
 .search_field{
     width: 287px;
     height: 32px;
     background-color: $color-search-back;
+    border: none;
     border: 1px solid $color-border-search;
     border-right: none;
     padding: 10px 15px;
@@ -129,11 +127,11 @@
 }
 .search_button{
     width: 79px;
-    height: 32px;
-    margin: -32px 0 0 287px;
+    height: 31px;
+    margin: 2px 0 0 -4px;   
     border: none;
+    border-bottom: 1px solid $color-active-back;
     background-color: $color-active-back;
-    position: absolute;
     color: $color-text-nav-menu-active;
     @include text-OpenSans(600, normal, 16px);
     @include borderRadius(0 3px 3px 0);
@@ -150,19 +148,19 @@
     }
 }
 .header-nav{
+    float: right;
     @extend %clearfix;
 }
 .header-nav_list{
     @extend %clearfix;
     padding: 0;
-    float: right;
     margin-top: 35px;
 }
 .header-nav_item{
-    float: left;
+    text-align: right;
     list-style: none;
-    margin: 0 0 0 30px;
-    display: block;
+    margin: 0 0 0 29px;
+    display: inline;
 }
 .header-nav_link{
     @include text-OpenSans(600, normal, 16px);

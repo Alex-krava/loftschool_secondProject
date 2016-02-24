@@ -14,9 +14,9 @@ include ../mixins/mixins
         .header_second_container
             a(href="/").logo
                 img(src="img/logo-head.png", alt="cooltech").logo_img
-            form.search
+            form(action="" method="GET").search
                 input(type="text" placeholder="Что будем искать").search_field
-                input(type="button" value="Найти").search_button
+                input(type="submit" value="Найти").search_button
             +list(['Карта проезда', 'История заказов', 'Корзина'], 'header-nav')
             
             

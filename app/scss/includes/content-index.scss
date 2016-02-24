@@ -303,16 +303,18 @@
 .content-index_content-list--first .charactiristic{
     display: none;
 }
+.content-index_content-item_title_rating{
+    list-style: none;
+    padding: 0;
+}
 .content-index_content-list--first .content-index_content-item_title_rating_star{
     margin-top: 18px;
     margin-left: -2px;
     float: left;
-    cursor: pointer;
     @include sprite($star);
 }
 .content-index_content-list--first .content-index_content-item_title_rating_star-total{
     float: left;
-    cursor: pointer;
     margin: 19px 3px 0 0;
     @include sprite($star-total);
 }
@@ -466,6 +468,8 @@
     width: 145px;
     float: none;
     text-align: center;
+    list-style: none;
+    padding: 0;
     margin: 8px auto 0;
     @extend %clearfix;
 }
@@ -473,12 +477,10 @@
     margin-top: 0;
     margin-left: -2px;
     float: left;
-    cursor: pointer;
     @include sprite($star);
 }
 .content-index_content-list--second .content-index_content-item_title_rating_star-total{
     float: left;
-    cursor: pointer;
     margin: 1px 3px 0 0;
     @include sprite($star-total);
 }
