@@ -8,9 +8,14 @@
 }
 .info-text_container{
     text-align: justify;
-    text-indent: 35px;
+    text-indent: 38px;
+    margin-top: 5px;
+    line-height: 1.4;
     color: $color-text-header-aside;
     @include text-OpenSans(normal, normal, 14px);
+}
+.info-text_p{
+    margin-bottom: 26px;
 }
 //style columnizer
 .first.column{

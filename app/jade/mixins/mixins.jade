@@ -18,10 +18,7 @@ mixin social(items, className)
 
 mixin select(items, className, active)
     select(class="#{className}")
-        each item, key in items
-            if key == active
-                option(class="#{className}" autofocus)= item
-            else
+        each item, key in items           
                 option(class="#{className}")= item
 
 mixin colors(items, className, active)

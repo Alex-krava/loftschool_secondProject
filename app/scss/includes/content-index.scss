@@ -76,7 +76,7 @@
     float: left;
     @include text-OpenSans(normal, normal, 14px);
     color: $color-text-content;
-    margin: 15px 7px 0 18px;
+    margin: 14px 10px 0 19px;
 }
 .catalogs-buttons{
     width: 260px;
@@ -87,7 +87,7 @@
 .catalogs-buttons_text{
     @include text-OpenSans(normal, normal, 14px);
     color: $color-text-content;
-    margin: 15px 16px 0 0;
+    margin: 16px 17px 0 -3px;
     float: left;
 }
 .catalogs-buttons-style{
@@ -155,6 +155,8 @@
     @extend %clearfix;
 }
 .content-index_content-item_code{
+    overflow: hidden;
+    width: 110px;
     color: $color-text-side-nav;
     float: left;
     margin-top: 7px;
@@ -282,16 +284,26 @@
     border-right: 1px solid $color-border-search;
 }
 .content-index_content-list--first .content-index_content-item_title_name{
+    width: 380px;
+    height: 19px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     @include text-OpenSans(600, normal, 14px);
 }
 .content-index_content-list--first .content-index_content-item_title_product{
     display: none;
 }
 .content-index_content-list--first .content-index_content-item_code{
+    width: 110px;
     margin: 7px 0 7px 25px;
 }
 .content-index_content-list--first .content-index_content-item_title_about{
     width: 380px;
+    height: 98px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     @include text-OpenSans(normal, normal, 14px);
     display: block;
     margin-top: 17px;
@@ -431,7 +443,9 @@
 .content-index_content-list--second .content-index_content-item_title_name{
     @include text-OpenSans(600, normal, 14px);
     display: block;
-    min-height: 40px;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .content-index_content-list--second .content-index_content-item_title_product{
     display: none;
@@ -447,7 +461,7 @@
     padding: 0;
 }
 .content-index_content-list--second .charactiristic_item{
-    height: 21px;
+    height: 20px;
     background-color: #e6e6e6;
     color: $color-text-header-aside;
     line-height: 1.429;
@@ -457,15 +471,42 @@
     &:nth-child(2n+2){
         background-color: #fff;
     }
+    &:nth-child(2) .charactiristic_item_text-left{
+        width: 80%;
+    }
+    &:nth-child(4) .charactiristic_item_text-left{
+        width: 20%;
+    }
+    &:nth-child(2) .charactiristic_item_text-right{
+        width: 20%;
+    }
+    &:nth-child(4) .charactiristic_item_text-right{
+        width: 80%;
+    }
 }
 .content-index_content-list--second .charactiristic_item_text-left{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
     float: left;
+    
+
 }
 .content-index_content-list--second .charactiristic_item_text-right{
+    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: right;
     float: right;
+    
+
 }
 .content-index_content-list--second .content-index_content-item_title_rating{
-    width: 145px;
+    width: 135px;
     float: none;
     text-align: center;
     list-style: none;
@@ -501,17 +542,17 @@
 }
 .content-index_content-list--second .content-index_content-item_prise{
     float: none;
-    margin: 8px 10px 0 0;
+    margin: 2px 10px 0 0;
     text-align: center;
     @include text-OpenSans(600, normal, 20px);
 }
 .content-index_content-list--second .content-index_content-item_availability{
     float: left;
-    margin: 14px 0 0 24px;
+    margin: 10px 0 0 24px;
     position: relative;
 }
 .content-index_content-list--second .content-index_content-item_button{
-    margin: 5px 0 14px 14px;
+    margin: 2px 0 14px 14px;
     padding: 7px 15px;
 }
 //========================================

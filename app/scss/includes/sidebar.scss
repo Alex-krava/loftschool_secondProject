@@ -55,7 +55,7 @@
     display: block;
     color: $color-text-header-aside;
     cursor: pointer;
-    padding: 15px 25px;
+    padding: 12px 26px;
     @include borderRadius(5px);
     @include text-OpenSans(600, normal, 16px);
     
@@ -82,7 +82,7 @@
     }
     &:not(checked) + .sidebar_accordion_availability_text{
         position: relative;
-        padding: 0 0 0 28px;
+        padding: 3px 0 0 31px;
     }
     &:checked + .sidebar_accordion_availability_text:before{
         content: '';
@@ -153,7 +153,7 @@
     }
     &:not(checked) + .sidebar_accordion_brands_text{
         position: relative;
-        padding: 0 0 0 28px;
+        padding: 2px 0 0 31px;
     }
     &:checked + .sidebar_accordion_brands_text:before{
         content: '';
@@ -217,8 +217,8 @@
     }
 }
 #amount-first, #amount-second {
-    width: 79px;
-    height: 26px;
+    width: 84px;
+    height: 29px;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(235, 237, 239);
@@ -237,7 +237,7 @@
     @include text-OpenSans(normal, normal, 14px);
 }
 .sidebar_accordion_price_slider_label_first{
-    margin-left: 50px;
+    margin-left: 45px;
     color: $color-text-header-aside;
     @include text-OpenSans(normal, normal, 14px);
 }
@@ -259,7 +259,7 @@
     display: block;
     color: $color-text-header-aside;
     cursor: pointer;
-    padding: 15px 25px;
+    padding: 14px 25px;
     @include borderRadius(5px);
     @include text-OpenSans(600, normal, 16px);
     
@@ -285,7 +285,7 @@
     display: block;
     color: $color-text-header-aside;
     cursor: pointer;
-    padding: 15px 25px;
+    padding: 13px 25px;
     @include borderRadius(5px);
     @include text-OpenSans(600, normal, 16px);
     
@@ -308,7 +308,7 @@
     display: block;
         width: 35px;
         height: 35px;
-        margin: 0 20px 20px 0;
+        margin: 0 23px 23px 0;
         float: left;
         border: 1px solid $color-border-search;
         cursor: pointer;
@@ -404,7 +404,7 @@
     }
     &:not(checked) + .sidebar_accordion_os_text{
         position: relative;
-        padding: 0 0 0 28px;
+        padding: 2px 0 0 28px;
     }
     &:checked + .sidebar_accordion_os_text:before{
         content: '';
