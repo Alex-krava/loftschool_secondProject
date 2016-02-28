@@ -13,8 +13,8 @@ mixin social(items, className)
     div(class="#{className}")
         ul(class="#{className}_list")
             each item in items
-                    li(class="#{className}_item #{className}_item_#{item}")
-                        a(href="#" class="#{className}_link_#{item}" target="_blank")
+                    li(class="#{className}_item #{className}_#{item}")
+                        a(href="#" class="#{className}_#{item}" target="_blank")
 
 mixin select(items, className, active)
     select(class="#{className}")
@@ -43,57 +43,58 @@ mixin nav-content(items, className, active)
              
 mixin product_item(urlBigImg, urlSmallImg1, urlSmallImg2, urlSmallImg3, numberCode, smartName, smartAbout, typeCard, numberCard, color, os, threeG, fourG, gps, price)
     li.content-index_content-item
-                .content-index_content-item_photo-code
-                    .content-index_content-item_photo
-                        .content-index_content-item_photo_big
-                            img.content-index_content-item_photo_img1(src="#{urlBigImg}", alt="img")
-                        ul.content-index_content-item_photo_img                
-                            li.content-index_content-item_photo_first.content-index_content-item_photo_small
-                                a.content-index_content-item_photo_small_link
-                                    img.content-index_content-item_photo_img-l1(src="#{urlSmallImg1}", alt="img")
-                            li.content-index_content-item_photo_second.content-index_content-item_photo_small
-                                a.content-index_content-item_photo_small_link
-                                    img.content-index_content-item_photo_img-l2(src="#{urlSmallImg2}", alt="img")
-                            li.content-index_content-item_photo_third.content-index_content-item_photo_small
-                                a.content-index_content-item_photo_small_link
-                                    img.content-index_content-item_photo_img-l3(src="#{urlSmallImg3}", alt="img")
-                    .content-index_content-item_code Артикул
-                        span.content-index_content-item_code_number #{numberCode}
-                .content-index_content-item_title
-                    span.content-index_content-item_title_product Смартфон 
-                    span.content-index_content-item_title_name #{smartName}
-                    span.content-index_content-item_title_about #{smartAbout}
+                .content-index_photo-code
+                    .content-index_photo
+                        .content-index_photo-big
+                            img.content-index_photo_img1(src="#{urlBigImg}", alt="img")
+                        ul.content-index_photo_img                
+                            li.content-index_photo-first.content-index_photo-small
+                                a.content-index_photo-small--link
+                                    img.content-index_img-l1(src="#{urlSmallImg1}", alt="img")
+                            li.content-index_photo-second.content-index_photo-small
+                                a.content-index_photo-small--link
+                                    img.content-index_img-l2(src="#{urlSmallImg2}", alt="img")
+                            li.content-index_photo-third.content-index_photo-small
+                                a.content-index_photo-small--link
+                                    img.content-index_img-l3(src="#{urlSmallImg3}", alt="img")
+                    .content-index_vendor-code Артикул
+                        span.vendor-code_number #{numberCode}
+                .content-index_item-title.item-title
+                    span.item-title_product Смартфон 
+                    span.item-title_name #{smartName}
+                    span.item-title_about #{smartAbout}
                     ul.charactiristic
-                        li.charactiristic_item
-                            span.charactiristic_item_text-left Тип SIM-карты
-                            span.charactiristic_item_text-right #{typeCard}
-                        li.charactiristic_item
-                            span.charactiristic_item_text-left Количество SIM-карт
-                            span.charactiristic_item_text-right #{numberCard}
-                        li.charactiristic_item
-                            span.charactiristic_item_text-left Цвет
-                            span.charactiristic_item_text-right #{color}
-                        li.charactiristic_item
-                            span.charactiristic_item_text-left ОС
-                            span.charactiristic_item_text-right #{os}
-                        li.charactiristic_item
-                            span.charactiristic_item_text-left Связь 3G
-                            span.charactiristic_item_text-right #{threeG}
-                        li.charactiristic_item
-                            span.charactiristic_item_text-left 4G (LTE)
-                            span.charactiristic_item_text-right #{fourG}
-                        li.charactiristic_item
-                            span.charactiristic_item_text-left GPS-модуль
-                            span.charactiristic_item_text-right #{gps}
-                    ul.content-index_content-item_title_rating
-                        li.content-index_content-item_title_rating_star-total
-                        li.content-index_content-item_title_rating_star-total
-                        li.content-index_content-item_title_rating_star-total
-                        li.content-index_content-item_title_rating_star-total
-                        li.content-index_content-item_title_rating_star
-                        li.content-index_content-item_title_rating_number 4
-                .content-index_content-item_prise
-                    span.content-index_content-item_prise_rating #{price} 
-                    span.content-index_content-item_prise_rub &#8381;
-                .content-index_content-item_availability В наличии
-                button.content-index_content-item_button В корзину
+                        li.charactiristic-item
+                            span.charactiristic-item_text-left Тип SIM-карты
+                            span.charactiristic-item_text-right #{typeCard}
+                        li.charactiristic-item
+                            span.charactiristic-item_text-left Количество SIM-карт
+                            span.charactiristic-item_text-right #{numberCard}
+                        li.charactiristic-item
+                            span.charactiristic-item_text-left Цвет
+                            span.charactiristic-item_text-right #{color}
+                        li.charactiristic-item
+                            span.charactiristic-item_text-left ОС
+                            span.charactiristic-item_text-right #{os}
+                        li.charactiristic-item
+                            span.charactiristic-item_text-left Связь 3G
+                            span.charactiristic-item_text-right #{threeG}
+                        li.charactiristic-item
+                            span.charactiristic-item_text-left 4G (LTE)
+                            span.charactiristic-item_text-right #{fourG}
+                        li.charactiristic-item
+                            span.charactiristic-item_text-left GPS-модуль
+                            span.charactiristic-item_text-right #{gps}
+                    .rating-container
+                        ul.rating
+                            li.rating_star-total
+                            li.rating_star-total
+                            li.rating_star-total
+                            li.rating_star-total
+                            li.rating_star
+                        .rating_number 4
+                .prise
+                    span.prise_rating #{price} 
+                    span.prise_rub &#8381;
+                .content-index_availability В наличии
+                button.content-index_button В корзину

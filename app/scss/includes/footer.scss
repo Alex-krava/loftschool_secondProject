@@ -2,35 +2,35 @@
    height: 220px;
    background:#333333 url(../img/footer-back.png) center center repeat-x;
 }
-.footer_first{
+.footer-first{
     border-bottom: 1px solid #494949;
     @extend %clearfix; 
 }
-.footer_first_container{
+.footer-first_container{
     width: 1100px;
     min-height: 191px;
     @include margin-Auto();
     @extend %clearfix;
 }
-.footer_first_container_logo{
+.footer-first_logo{
     padding-top:70px;
     float: left;
     @include box-sizing-border-box();
 }
-.social-food{
+.social-footer{
     width: 550px;
     float: right;
     padding-top: 35px;
     @extend %clearfix;
 }
-.social-food_list{
+.social-footer_list{
     margin: 1px 10px;
     list-style: none;
     padding: 0;
     float: right;
     @extend %clearfix;
 }
-.social-food_item{
+.social-footer_item{
     float: left;
     margin-right: 25px;
     
@@ -38,7 +38,7 @@
         margin-right: 0;
     }
 }
-.social-food_link_fb{
+.social-footer_fb{
     display: block;
     @include sprite($facebook-footer);
     
@@ -46,7 +46,7 @@
         @include sprite($facebook-footer-hover);
     }
 }
-.social-food_link_vk{
+.social-footer_vk{
     display: block;
     @include sprite($vk-footer);
     
@@ -54,7 +54,7 @@
         @include sprite($vk-footer-hover);
     }
 }
-.social-food_link_twitter{
+.social-footer_twitter{
     display: block;
     @include sprite($twitter-footer);
     
@@ -91,7 +91,7 @@
         opacity: 0.8;
     }
 }
-.footer_second{
+.footer-second{
     text-align: center;
     color: #fff;
     line-height: 2;

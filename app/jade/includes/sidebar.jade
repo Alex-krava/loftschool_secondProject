@@ -1,43 +1,43 @@
 .sidebar
     +list(['Флагманы', 'Бюджетная линейка'], 'sidebar_nav', 1)
-    .sidebar_accordion
-        .sidebar_accordion_availability
-            form.sidebar_accordion_availability_form
-              span.sidebar_accordion_availability_title Наличие в магазинах
-              input(type="radio" id="first_availability" name="availability" checked="checked").sidebar_accordion_availability_item
-              label(for="first_availability").sidebar_accordion_availability_text  Во всех магазинах
-              input(type="radio" id="second_availability" name="availability").sidebar_accordion_availability_item
-              label(for="second_availability").sidebar_accordion_availability_text  В ближайшем ко мне магазине
+    .accordion
+        .accordion_availability.availability
+            form.availability_form
+              span.availability_title Наличие в магазинах
+              input(type="radio" id="first_availability" name="availability" checked="checked").availability_item
+              label(for="first_availability").availability_text  Во всех магазинах
+              input(type="radio" id="second_availability" name="availability").availability_item
+              label(for="second_availability").availability_text  В ближайшем ко мне магазине
         
-        .sidebar_accordion_brands
-            form.sidebar_accordion_brands_form
-              span.sidebar_accordion_brands_title Бренды
-              input(type="checkbox" id="first_brands").sidebar_accordion_brands_item
-              label(for="first_brands").sidebar_accordion_brands_text  Lenovo
-              input(type="checkbox" id="second_brands").sidebar_accordion_brands_item
-              label(for="second_brands").sidebar_accordion_brands_text  Apple
-              input(type="checkbox" id="third_brands").sidebar_accordion_brands_item
-              label(for="third_brands").sidebar_accordion_brands_text  Samsung
-              input(type="checkbox" id="fourth_brands").sidebar_accordion_brands_item
-              label(for="fourth_brands").sidebar_accordion_brands_text  Asus
-              input(type="checkbox" id="fifth_brands").sidebar_accordion_brands_item
-              label(for="fifth_brands").sidebar_accordion_brands_text  Motorola
-              input(type="reset" id="reset_brands" value="").sidebar_accordion_brands_item-reset
-              label(for="reset_brands").sidebar_accordion_brands_text-reset  Сбросить фильтр
+        .accordion_brands.brands
+            form.brands_form
+              span.brands_title Бренды
+              input(type="checkbox" id="first_brands").brands_item
+              label(for="first_brands").brands_text  Lenovo
+              input(type="checkbox" id="second_brands").brands_item
+              label(for="second_brands").brands_text  Apple
+              input(type="checkbox" id="third_brands").brands_item
+              label(for="third_brands").brands_text  Samsung
+              input(type="checkbox" id="fourth_brands").brands_item
+              label(for="fourth_brands").brands_text  Asus
+              input(type="checkbox" id="fifth_brands").brands_item
+              label(for="fifth_brands").brands_text  Motorola
+              input(type="reset" id="reset_brands" value="").brands_item-reset
+              label(for="reset_brands").brands_text-reset  Сбросить фильтр
               
-        .sidebar_accordion_price
-            form.sidebar_accordion_price_form
-              span.sidebar_accordion_price_title Цена
-              .sidebar_accordion_price_slider
-                    label(for="amount-first").sidebar_accordion_price_slider_label от
+        .accordion_price-filter.price-filter
+            form.price-filter_form
+              span.price-filter_title Цена
+              .price-filter_slider.slider
+                    label(for="amount-first").slider_label от
                     input(type="text" id="amount-first")
-                    label(for="amount-second").sidebar_accordion_price_slider_label_first до
+                    label(for="amount-second").slider_label-first до
                     input(type="text" id="amount-second")
               #slider-range
               
-        .sidebar_accordion_color
-            .sidebar_accordion_color_container
-              span.sidebar_accordion_color_title Цвет
+        .accordion_color.color
+            .color_container
+              span.color_title Цвет
               +colors([
                   'white',
                   'gray',
@@ -51,20 +51,20 @@
                   'purple',
                   'pink',
                   'brown',
-              ], 'sidebar_accordion_color_colors', 1)
+              ], 'colors', 1)
               
-        .sidebar_accordion_os
-            form.sidebar_accordion_os_form
-              span.sidebar_accordion_form_title Операционные системы
-              input(type="checkbox" id="first_os").sidebar_accordion_os_item
-              label(for="first_os").sidebar_accordion_os_text  Android
-              input(type="checkbox" id="second_os").sidebar_accordion_os_item
-              label(for="second_os").sidebar_accordion_os_text  iOS
-              input(type="checkbox" id="third_os").sidebar_accordion_os_item
-              label(for="third_os").sidebar_accordion_os_text  Windows Mobile
-              input(type="checkbox" id="fourth_os").sidebar_accordion_os_item
-              label(for="fourth_os").sidebar_accordion_os_text  Symbian
-              input(type="checkbox" id="fifth_os").sidebar_accordion_os_item
-              label(for="fifth_os").sidebar_accordion_os_text  Custom
-              input(type="reset" id="reset_os").sidebar_accordion_os_item-reset
-              label(for="reset_os").sidebar_accordion_os_text-reset  Сбросить фильтр
+        .accordion_os.os
+            form.os_form.os
+              span.os_title Операционные системы
+              input(type="checkbox" id="first_os").os_item
+              label(for="first_os").os_text  Android
+              input(type="checkbox" id="second_os").os_item
+              label(for="second_os").os_text  iOS
+              input(type="checkbox" id="third_os").os_item
+              label(for="third_os").os_text  Windows Mobile
+              input(type="checkbox" id="fourth_os").os_item
+              label(for="fourth_os").os_text  Symbian
+              input(type="checkbox" id="fifth_os").os_item
+              label(for="fifth_os").os_text  Custom
+              input(type="reset" id="reset_os").os_item-reset
+              label(for="reset_os").os_text-reset  Сбросить фильтр

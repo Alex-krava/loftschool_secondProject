@@ -4,25 +4,25 @@ var accordion = (function () {
     }
 
     var _setUpListners = function () {
-        $(".sidebar_accordion_availability_title").on("click", function(){
-            $(".sidebar_accordion_availability").toggleClass("accordion-height");
-            $(".sidebar_accordion_availability_title").toggleClass("accordion-cursor");
+        $(".availability_title").on("click", function(){
+            $(".availability").toggleClass("accordion-height");
+            $(".availability_title").toggleClass("accordion-cursor");
     });
-    $(".sidebar_accordion_brands_title").on("click", function(){
-            $(".sidebar_accordion_brands").toggleClass("accordion-height");
-            $(".sidebar_accordion_brands_title").toggleClass("accordion-cursor");
+        $(".brands_title").on("click", function(){
+            $(".brands").toggleClass("accordion-height");
+            $(".brands_title").toggleClass("accordion-cursor");
     });
-    $(".sidebar_accordion_price_title").on("click", function(){
-            $(".sidebar_accordion_price").toggleClass("accordion-height");
-            $(".sidebar_accordion_price_title").toggleClass("accordion-cursor");
+        $(".price-filter_title").on("click", function(){
+            $(".price-filter_form").toggleClass("accordion-height");
+            $(".price-filter_title").toggleClass("accordion-cursor");
     });
-    $(".sidebar_accordion_color_title").on("click", function(){
-            $(".sidebar_accordion_color").toggleClass("accordion-height");
-            $(".sidebar_accordion_color_title").toggleClass("accordion-cursor");
+        $(".color_title").on("click", function(){
+            $(".color").toggleClass("accordion-height");
+            $(".color_title").toggleClass("accordion-cursor");
     });
-    $(".sidebar_accordion_form_title").on("click", function(){
-            $(".sidebar_accordion_os").toggleClass("accordion-height");
-            $(".sidebar_accordion_form_title").toggleClass("accordion-cursor");
+        $(".os_title").on("click", function(){
+            $(".os").toggleClass("accordion-height");
+            $(".os_title").toggleClass("accordion-cursor");
     });
     }
 

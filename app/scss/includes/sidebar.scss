@@ -35,7 +35,7 @@
     color: $color-text-side-nav-hover;
 }
 //ACCORDION
-.sidebar_accordion{
+.accordion{
     background-color: $color-content-back;
     border: 1px solid $color-border-search;
     @include box-sizing-border-box();
@@ -43,15 +43,15 @@
     @extend %clearfix;
 }
 //AVAILABILITY
-.sidebar_accordion_availability{
+.accordion_availability{
     border-bottom: 1px solid $color-border-search;
     overflow: hidden;
     @extend %clearfix;
 }
-.sidebar_accordion_availability_form{
+.availability_form{
     @extend %clearfix;
 }
-.sidebar_accordion_availability_title{
+.availability_title{
     display: block;
     color: $color-text-header-aside;
     cursor: pointer;
@@ -67,7 +67,7 @@
         @include sprite($select-side-open);
     }
 }
-.sidebar_accordion_availability_item{
+.availability_item{
     vertical-align: top;
     margin: 0 3px 0 0;
     width: 19px;
@@ -80,11 +80,11 @@
     &:checked{
         display: none;
     }
-    &:not(checked) + .sidebar_accordion_availability_text{
+    &:not(checked) + .availability_text{
         position: relative;
         padding: 3px 0 0 31px;
     }
-    &:checked + .sidebar_accordion_availability_text:before{
+    &:checked + .availability_text:before{
         content: '';
         position: absolute;
         left: 0;
@@ -95,7 +95,7 @@
         box-shadow: 0 0 0 2px #fbfbfb inset;
         @include borderRadius(50%);
     }
-    &:not(checked) + .sidebar_accordion_availability_text:before{
+    &:not(checked) + .availability_text:before{
         content: '';
         position: absolute;
         left: 0;
@@ -105,7 +105,7 @@
         @include borderRadius(50%);
     }
 }
-.sidebar_accordion_availability_text{
+.availability_text{
     margin: 0 0 15px 25px;
     cursor: pointer;
     float: left;
@@ -114,15 +114,15 @@
 }
 
 //BRANDS
-.sidebar_accordion_brands{
+.accordion_brands{
     border-bottom: 1px solid $color-border-search;
     overflow: hidden;
     @extend %clearfix;
 }
-.sidebar_accordion_form_brands{
+.brands_form{
     @extend %clearfix;
 }
-.sidebar_accordion_brands_title{
+.brands_title{
     display: block;
     color: $color-text-header-aside;
     cursor: pointer;
@@ -138,7 +138,7 @@
         @include sprite($select-side-open);
     }
 }
-.sidebar_accordion_brands_item{
+.brands_item{
     vertical-align: top;
     margin: 0 3px 0 0;
     width: 19px;
@@ -151,11 +151,11 @@
     &:checked{
         display: none;
     }
-    &:not(checked) + .sidebar_accordion_brands_text{
+    &:not(checked) + .brands_text{
         position: relative;
         padding: 2px 0 0 31px;
     }
-    &:checked + .sidebar_accordion_brands_text:before{
+    &:checked + .brands_text:before{
         content: '';
         position: absolute;
         left: 0;
@@ -165,7 +165,7 @@
         border: 3px solid #ff6600;
         @include borderRadius(2px);
     }
-    &:not(checked) + .sidebar_accordion_brands_text:before{
+    &:not(checked) + .brands_text:before{
         content: '';
         position: absolute;
         left: 0;
@@ -176,10 +176,10 @@
         @include borderRadius(2px);
     }
 }
-.sidebar_accordion_brands_item-reset{
+.brands_item-reset{
     display: none;
 }
-.sidebar_accordion_brands_text-reset{
+.brands_text-reset{
     cursor: pointer;
     color: #5db2fc;
     margin: 0 0 15px 25px;
@@ -187,7 +187,7 @@
     text-decoration: underline;
     @include text-OpenSans(normal, normal, 14px);
 }
-.sidebar_accordion_brands_text{
+.brands_text{
     margin: 0 0 15px 25px;
     cursor: pointer;
     display: block;
@@ -231,12 +231,12 @@
     @include text-OpenSans(normal, normal, 14px);
     @include box-sizing-border-box();
 }
-.sidebar_accordion_price_slider_label{
+.slider_label{
     margin-left: 25px;
     color: $color-text-header-aside;
     @include text-OpenSans(normal, normal, 14px);
 }
-.sidebar_accordion_price_slider_label_first{
+.slider_label-first{
     margin-left: 45px;
     color: $color-text-header-aside;
     @include text-OpenSans(normal, normal, 14px);
@@ -247,15 +247,15 @@
 //==========================================
 //END SLIDER JQUERY UI STYLE
 //==========================================
-.sidebar_accordion_price{
+.accordion_price-filter{
     border-bottom: 1px solid $color-border-search;
     overflow: hidden;
     @extend %clearfix;
 }
-.sidebar_accordion_price_form{
+.price-filter_form{
     @extend %clearfix;
 }
-.sidebar_accordion_price_title{
+.price-filter_title{
     display: block;
     color: $color-text-header-aside;
     cursor: pointer;
@@ -273,15 +273,15 @@
 }
 
 //COLOR
-.sidebar_accordion_color{
+.accordion_color{
     border-bottom: 1px solid $color-border-search;
     overflow: hidden;
     @extend %clearfix;
 }
-.sidebar_accordion_color_container{
+.color_container{
     @extend %clearfix;
 }
-.sidebar_accordion_color_title{
+.color_title{
     display: block;
     color: $color-text-header-aside;
     cursor: pointer;
@@ -297,14 +297,14 @@
         @include sprite($select-side-open);
     }
 }
-.sidebar_accordion_color_colors{
+.colors{
     width: 250px;
     padding: 0 0 0 25px;
     list-style: none;
     margin-top: 0;
     @extend %clearfix;
 }
-.sidebar_accordion_color_colors_label{
+.colors_label{
     display: block;
         width: 35px;
         height: 35px;
@@ -313,11 +313,11 @@
         border: 1px solid $color-border-search;
         cursor: pointer;
 }
-.sidebar_accordion_color_colors_item{
+.colors_item{
     cursor: pointer;
     display: none;
     
-    &:checked + .sidebar_accordion_color_colors_label{
+    &:checked + .colors_label{
         display: block;
         width: 35px;
         height: 35px;
@@ -328,52 +328,52 @@
         @include borderRadius(2px);
     }
 }
-.sidebar_accordion_color_colors_white{
+.colors_white{
     background-color: #fff;
 }
-.sidebar_accordion_color_colors_gray{
+.colors_gray{
     background-color: #cccccc;
 }
-.sidebar_accordion_color_colors_black{
+.colors_black{
     background-color: #000;
 }
-.sidebar_accordion_color_colors_blue1{
+.colors_blue1{
     background-color: #0a3153;
 }
-.sidebar_accordion_color_colors_red{
+.colors_red{
     background-color: #ff1800;
 }
-.sidebar_accordion_color_colors_yellow{
+.colors_yellow{
     background-color: #fff343;
 }
-.sidebar_accordion_color_colors_orange{
+.colors_orange{
     background-color: #fb914a;
 }
-.sidebar_accordion_color_colors_green{
+.colors_green{
     background-color: #92c37c;
 }
-.sidebar_accordion_color_colors_blue2{
+.colors_blue2{
     background-color: #40a6ff;
 }
-.sidebar_accordion_color_colors_purple{
+.colors_purple{
     background-color: #9870ad;
 }
-.sidebar_accordion_color_colors_pink{
+.colors_pink{
     background-color: #dc78ad;
 }
-.sidebar_accordion_color_colors_brown{
+.colors_brown{
     background-color: #7f401d;
 }
 
 //OS
-.sidebar_accordion_os{
+.accordion_os{
     overflow: hidden;
     @extend %clearfix;
 }
-.sidebar_accordion_os_form{
+.os_form{
     @extend %clearfix;
 }
-.sidebar_accordion_form_title{
+.os_title{
     display: block;
     color: $color-text-header-aside;
     cursor: pointer;
@@ -389,7 +389,7 @@
         @include sprite($select-side-open);
     }
 }
-.sidebar_accordion_os_item{
+.os_item{
     vertical-align: top;
     margin: 0 3px 0 0;
     width: 19px;
@@ -402,11 +402,11 @@
     &:checked{
         display: none;
     }
-    &:not(checked) + .sidebar_accordion_os_text{
+    &:not(checked) + .os_text{
         position: relative;
         padding: 2px 0 0 28px;
     }
-    &:checked + .sidebar_accordion_os_text:before{
+    &:checked + .os_text:before{
         content: '';
         position: absolute;
         left: 0;
@@ -416,7 +416,7 @@
         border: 3px solid #ff6600;
         @include borderRadius(2px);
     }
-    &:not(checked) + .sidebar_accordion_os_text:before{
+    &:not(checked) + .os_text:before{
         content: '';
         position: absolute;
         left: 0;
@@ -427,10 +427,10 @@
         @include borderRadius(2px);
     }
 }
-.sidebar_accordion_os_item-reset{
+.os_item-reset{
     display: none;
 }
-.sidebar_accordion_os_text-reset{
+.os_text-reset{
     cursor: pointer;
     color: #5db2fc;
     margin: 0 0 15px 25px;
@@ -438,7 +438,7 @@
     text-decoration: underline;
     @include text-OpenSans(normal, normal, 14px);
 }
-.sidebar_accordion_os_text{
+.os_text{
     margin: 0 0 15px 25px;
     cursor: pointer;
     display: block;
