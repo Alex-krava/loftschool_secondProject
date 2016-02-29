@@ -355,12 +355,18 @@
 }
 .content-index_content-list--first .content-index_availability{
     float: left;
-    margin: -26px 0 0 638px;
+    position: absolute;
+    margin: 41px 0 0 62px;
 
 }
 .content-index_content-list--first .content-index_button{
-    margin: 129px 0 0 27px;
+    margin: 0px 0 27px 27px;
     padding: 7px 15px;
+}
+.content-index_content-list--first .content-index_conteiner-buttons{
+    margin: -4px 0 0px 200px;
+    float: right;
+    @extend %clearfix;
 }
 //========================================
 //end first filter
