@@ -1,5 +1,7 @@
 Second project LoftSchool
 
+<a href='http://loftschool2.kravchenkoalex.ru/' target='_blank'> DEMO </a>
+
 Installation:
 
 1. $ git clone https://github.com/Alex-krava/loftschool_secondProject.git
